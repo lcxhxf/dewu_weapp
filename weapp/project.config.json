@@ -22,7 +22,7 @@
     "lazyloadPlaceholderEnable": false,
     "useMultiFrameRuntime": true,
     "useApiHook": true,
-    "useApiHostProcess": false,
+    "useApiHostProcess": true,
     "babelSetting": {
       "ignore": [],
       "disablePlugins": [],
@@ -36,7 +36,7 @@
     "minifyWXSS": true,
     "showES6CompileOption": false
   },
-  "appid": "wxa6a476cfa853249d",
+  "appid": "wx5605c999fe5c7768",
   "projectname": "dewu",
   "libVersion": "2.14.1",
   "cloudfunctionTemplateRoot": "cloudfunctionTemplate",
