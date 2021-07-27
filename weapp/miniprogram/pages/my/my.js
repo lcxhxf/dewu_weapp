@@ -1,11 +1,16 @@
 // miniprogram/pages/my/my.js
+const { my_menu } = require('../../config/config.js')
+const { pay, buy, collect, set } = my_menu;
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-
+    pay,
+    buy,
+    collect,
+    set
   },
 
   /**
