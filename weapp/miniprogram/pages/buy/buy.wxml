@@ -23,13 +23,38 @@
       src="../../images/produce.png"></image>
       </view>
       <van-grid class="van-grid-hd" direction="horizontal" column-num="3">
-        <van-grid-item><image style="width:24rpx;height:24rpx;" src="../../images/produce_tip1.png"></image></van-grid-item>
-        <van-grid-item text="逐件查验" />
-        <van-grid-item icon="photo-o" text="多重鉴别" />
+        <van-grid-item use-slot >
+        <image style="width:24rpx;height:24rpx;" src="../../images/produce_tip1.png"></image>
+        正品保障
+        </van-grid-item>
+        <van-grid-item use-slot >
+        <image style="width:24rpx;height:24rpx;" src="../../images/produce_tip2.png"></image>
+        逐件查验
+        </van-grid-item>
+        <van-grid-item use-slot >
+        <image style="width:24rpx;height:24rpx;" src="../../images/produce_tip3.png"></image>
+        多重鉴别
+        </van-grid-item>
       </van-grid>
             </view>
     <view class="van-items">
             <van-grid class="van-grid-bd" column-num="2">
+              <van-grid-item use-slot >
+                <image style="width:300rpx;height:300rpx;" src="https://img1.baidu.com/it/u=2526426215,4168128738&fm=26&fmt=auto&gp=0.jpg"></image>
+                匡威1970s经典色
+              </van-grid-item>
+              <van-grid-item use-slot >
+                <image style="width:300rpx;height:300rpx;" src="https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fpic12.secooimg.com%2Fimgextra%2F1%2F4CKE%2F10%2F51%2F1ZWuaMd324faa6d8ca47d99d57b936f7566815.jpg&refer=http%3A%2F%2Fpic12.secooimg.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1629991677&t=f59e93682bcd7b2f258097560005034f"></image>
+                匡威1970s姜黄色
+              </van-grid-item>
+              <van-grid-item use-slot >
+                <image style="width:300rpx;height:300rpx;" src="https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fpic12.secooimg.com%2Fimgextra%2F1%2F4CKE%2F48%2F10%2F1Zg5Kv0e072778b53b414ca04fe2975ffe9bcb.jpg&refer=http%3A%2F%2Fpic12.secooimg.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1629991677&t=a32f6c93d18ff3fb72d922881391e85e"></image>
+                匡威1970s米白色
+              </van-grid-item>
+              <van-grid-item use-slot >
+                <image style="width:300rpx;height:300rpx;" src="https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fpic12.secooimg.com%2Fimgextra%2F1%2F4CKE%2F53%2F52%2F1Zk68A54b056ceb08e4d759f583d1b1b441f76.jpg&refer=http%3A%2F%2Fpic12.secooimg.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1629991677&t=7073141ebad458c4b988f8426138cf5d"></image>
+                匡威1970s低帮黑
+              </van-grid-item>
               <van-grid-item icon="photo-o" text="文字" wx:for="{{ 12 }}" />
             </van-grid>
     </view>
