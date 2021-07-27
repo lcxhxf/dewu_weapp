@@ -1,1 +1,7 @@
 /* miniprogram/pages/my/my.wxss */
+.icon-img{
+  width: 46rpx;
+  height: 46rpx;
+  margin-right: 10rpx;
+  margin-top: 10rpx;
+}

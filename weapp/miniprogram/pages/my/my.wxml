@@ -1,2 +1,54 @@
-<!--miniprogram/pages/my/my.wxml-->
-<text>miniprogram/pages/my/my.wxml</text>
+<view class="page">
+    <view class="page__hd"></view>
+    <view class="page__bd">
+        <view class="weui-cells  weui-cells_after-title">
+            <block wx:for="{{pay}}" wx:key="index">
+                <navigator url="{{item.url}}">
+                    <view class="weui-cell weui-cell_access weui-cell_example ">
+                        <view class="weui-cell__hd">
+                            <image wx:if='{{item.icon}}' class="icon-img"
+                             src="{{item.icon}}"></image>
+                        </view>
+                        <view class="weui-cell__bd">{{item.title}}</view>
+                        <view class="weui-cell__ft"></view>
+                    </view>
+                </navigator>
+            </block>
+        </view>
+        <view class="weui-cells weui-cells_after-title">
+            <block wx:for="{{buy}}" wx:key="index">
+                <navigator url="{{item.url}}">
+                    <view class="weui-cell weui-cell_access weui-cell_example ">
+                        <view class="weui-cell__hd">
+                            <image class="icon-img" 
+                            src="{{item.icon}}"></image>
+                        </view>
+                        <view class="weui-cell__bd">{{item.title}}</view>
+                        <view class="weui-cell__ft"><p>全部订单 2</p></view>
+                    </view>
+                </navigator>
+            </block>
+            <block wx:for="{{collect}}" wx:key="index">
+                <navigator url="{{item.url}}">
+                    <view class="weui-cell weui-cell_access weui-cell_example ">
+                        <view class="weui-cell__hd">
+                            <image class="icon-img" 
+                            src="{{item.icon}}"></image>
+                        </view>
+                        <view class="weui-cell__bd">{{item.title}}</view>
+                        <view class="weui-cell__ft"></view>
+                    </view>
+                </navigator>
+            </block>
+        </view>
+        <view class="weui-cells  weui-cells_after-title">
+            <block wx:for="{{set}}" wx:key="index">
+                <navigator url="{{item.url}}">
+                    <view class="weui-cell weui-cell_access weui-cell_example ">
+                        <view class="weui-cell__bd">{{item.title}}</view>
+                    </view>
+                </navigator>
+            </block>
+        </view>
+    </view>
+</view>
