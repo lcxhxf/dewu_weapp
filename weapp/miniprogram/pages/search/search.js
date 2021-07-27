@@ -15,7 +15,6 @@ Page({
     if (!keyword.trim()) {
       wx.showToast({
         title: '抱歉，没有找到相关商品，为您推荐以下热门商品',
-
       })
     }
     posterCollection

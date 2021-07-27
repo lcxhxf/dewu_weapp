@@ -20,15 +20,19 @@
 .weui-tip-img {
   height: 250rpx;
 }
-.van-grid-items_hd {
+.van-grid-hd .van-grid-item {
   height: 80rpx;
   letter-spacing: 4rpx;
   font-size: 24rpx;
   font: bold;
-}
-.van-grid-hd .van-grid-item {
-  height: 80rpx;
+  color: #333;
 }
 .van-grid-bd .van-grid-item {
   height: 400rpx;
+}
+.van-grid-hd .van-grid-item__content::after {
+  content: none !important;
+}
+.van-items {
+  margin-top: 30rpx;
 }
