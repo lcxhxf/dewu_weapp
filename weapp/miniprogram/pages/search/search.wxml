@@ -1,0 +1,13 @@
+<view class="page">
+  <view class="search">
+    <van-search 
+    value="{{value}}" 
+    placeholder="输入商品名称、货号"
+    bind:search="onSearch"/>
+    <block wx:if="results.length > 0">
+      <van-cell wx:for="{{results}}"
+        wx:if="_id"
+        title="{{item.title}}"></van-cell>
+    </block>
+  </view>
+</view>

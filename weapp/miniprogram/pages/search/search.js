@@ -1,28 +1,38 @@
-// miniprogram/pages/buy/buy.js
+// miniprogram/pages/search/search.js
+const db = wx.cloud.database()
+const posterCollection = db.collection('poster')
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
+    value: '',
+    results: []
+  },
+  onSearch(e) {
+    let keyword = e.detail
+    if (!keyword.trim()) {
+      wx.showToast({
+        title: '抱歉，没有找到相关商品，为您推荐以下热门商品',
 
+      })
+    }
+    posterCollection
+      .where({
+        title: db.RegExp({
+          regexp: keyword,
+          options: 'i'
+        })
+      })
+      .orderBy('hot', 'desc')
+      .get()
+      .then(res => {
+        this.setData({
+          results: res.data
+        })
+      })
   },
-  gotoSearch() {
-    wx.navigateTo({
-      url: '/pages/search/search',
-    })
-  },
-  kinds() {
-    wx.navigateTo({
-      url: '/pages/kinds/kinds',
-    })
-  },
-  produce() {
-    wx.navigateTo({
-      url: '/pages/produce/produce',
-    })
-  },
-
   /**
    * 生命周期函数--监听页面加载
    */

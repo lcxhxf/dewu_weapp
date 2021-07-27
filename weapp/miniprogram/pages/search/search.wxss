@@ -1,0 +1,6 @@
+.weui-search-bar {
+  background-color: #fff;
+}
+.weui-search-bar__box {
+  background-color: #f2f0f0;
+}

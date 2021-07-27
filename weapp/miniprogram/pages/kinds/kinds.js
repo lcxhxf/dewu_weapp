@@ -1,4 +1,4 @@
-// miniprogram/pages/buy/buy.js
+// miniprogram/pages/kinds/kinds.js
 Page({
 
   /**
@@ -6,21 +6,6 @@ Page({
    */
   data: {
 
-  },
-  gotoSearch() {
-    wx.navigateTo({
-      url: '/pages/search/search',
-    })
-  },
-  kinds() {
-    wx.navigateTo({
-      url: '/pages/kinds/kinds',
-    })
-  },
-  produce() {
-    wx.navigateTo({
-      url: '/pages/produce/produce',
-    })
   },
 
   /**
