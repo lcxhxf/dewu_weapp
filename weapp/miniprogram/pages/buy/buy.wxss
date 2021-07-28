@@ -14,9 +14,6 @@
   padding: 20rpx 24rpx;
   width: 52rpx;
 }
-.weui-tabs {
-  color: #000000;
-}
 .weui-tip-img {
   height: 250rpx;
 }
@@ -35,4 +32,7 @@
 }
 .van-items {
   margin-top: 30rpx;
+}
+.van-tabs__wrap .van-tabs__wrap--scrollable {
+  z-index: 1;
 }
