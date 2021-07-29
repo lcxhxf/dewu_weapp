@@ -1,31 +1,46 @@
-
 <view class="page">
     <view class="page__hd"></view>
     <view class="page__bd">
-        <view class="weui-cells  weui-cells_after-title">
+        <view class="weui-cells  weui-cells_after-title my_head">
             <block wx:for="{{pay}}" wx:key="index">
                 <navigator url="{{item.url}}">
                     <view class="weui-cell weui-cell_access weui-cell_example ">
                         <view class="weui-cell__hd">
-                            <image wx:if='{{item.icon}}' class="icon-img"
-                             src="{{item.icon}}"></image>
+                            <image class="head_img" src="../../images/my_icon/head_pic.jpg"></image>
                         </view>
-                        <view class="weui-cell__bd">{{item.title}}</view>
-                        <view class="weui-cell__ft"></view>
+                        <view class="weui-cell__bd">{{item.title}}<image class="sex_img"
+                                src="../../images/my_icon/sex.png"></image>
+                        </view>
                     </view>
                 </navigator>
             </block>
         </view>
-        <view class="weui-cells weui-cells_after-title">
+        <view class="weui-cells weui-cells_after-title my_tools">
             <block wx:for="{{buy}}" wx:key="index">
-                <navigator url="{{item.url}}">
+                <navigator style="border-bottom: none" url="{{item.url}}">
                     <view class="weui-cell weui-cell_access weui-cell_example ">
                         <view class="weui-cell__hd">
-                            <image class="icon-img" 
-                            src="{{item.icon}}"></image>
+                            <image class="icon-img" src="{{item.icon}}"></image>
                         </view>
-                        <view class="weui-cell__bd">{{item.title}}</view>
-                        <view class="weui-cell__ft"><p>全部订单 2</p></view>
+                        <view class="weui-cell__bd">{{item.title}}<p>全部订单 2</p>
+                        </view>
+                        <view class="weui-cell__ft"></view>
+                    </view>
+                </navigator>
+                <navigator>
+                    <view class="weui-cell weui-cell_access weui-cell_example buy_info ">
+                        <view>
+                            <image class="buy-img" src="../../images/my_icon/my11.png"></image>
+                            请付款
+                        </view>
+                        <view>
+                            <image class="buy-img" src="../../images/my_icon/my10.png"></image>
+                            待发货
+                        </view>
+                        <view>
+                            <image class="buy-img" src="../../images/my_icon/my9.png"></image>
+                            待收货
+                        </view>
                     </view>
                 </navigator>
             </block>
@@ -33,8 +48,7 @@
                 <navigator url="{{item.url}}">
                     <view class="weui-cell weui-cell_access weui-cell_example ">
                         <view class="weui-cell__hd">
-                            <image class="icon-img" 
-                            src="{{item.icon}}"></image>
+                            <image class="icon-img" src="{{item.icon}}"></image>
                         </view>
                         <view class="weui-cell__bd">{{item.title}}</view>
                         <view class="weui-cell__ft"></view>
@@ -42,7 +56,7 @@
                 </navigator>
             </block>
         </view>
-        <view class="weui-cells  weui-cells_after-title">
+        <view class="weui-cells  weui-cells_after-title log_out">
             <block wx:for="{{set}}" wx:key="index">
                 <navigator url="{{item.url}}">
                     <view class="weui-cell weui-cell_access weui-cell_example ">
@@ -53,5 +67,3 @@
         </view>
     </view>
 </view>
-
-
