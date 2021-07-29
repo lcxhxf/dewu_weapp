@@ -5,9 +5,77 @@ Page({
    * 页面的初始数据
    */
   data: {
-
+    mainActiveIndex: 0,
+    activeId: [],
+    max: 1,
+    items: [
+      {
+        text: '推荐',
+        children: [
+          {
+            text: '板鞋',
+            id: 1,
+            disabled: false,
+          },
+          {
+            text: '帆布鞋',
+            id: 2,
+          },
+        ],
+      },
+      {
+        text: '推荐',
+        children: [
+          {
+            text: '板鞋',
+            id: 1,
+            disabled: false,
+          },
+          {
+            text: '帆布鞋',
+            id: 2,
+          },
+        ],
+      },
+      {
+        text: '推荐',
+        children: [
+          {
+            text: '板鞋',
+            id: 1,
+            disabled: false,
+          },
+          {
+            text: '帆布鞋',
+            id: 2,
+          },
+        ],
+      },
+    ]
+  },
+  onClickNav({ detail = {} }) {
+    this.setData({
+      mainActiveIndex: detail.index || 0,
+    });
   },
 
+  onClickItem({ detail = {} }) {
+    const { activeId } = this.data;
+
+    const index = activeId.indexOf(detail.id);
+    if (index > -1) {
+      activeId.splice(index, 1);
+    } else {
+      activeId.push(detail.id);
+    }
+
+    this.setData({ activeId });
+  },
+  gotoSearch() {
+    wx.navigateTo({
+      url: '/pages/search/search',
+    })
+  },
   /**
    * 生命周期函数--监听页面加载
    */

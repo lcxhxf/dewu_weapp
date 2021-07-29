@@ -1,0 +1,17 @@
+<view class="page">
+  <view class="search" bindtap="gotoSearch">
+    <van-search placeholder="搜索商品"
+    input-align="center"
+    disabled/>
+  </view>
+  <view class="kinds">
+    <van-tree-select
+  items="{{ items }}"
+  main-active-index="{{ mainActiveIndex }}"
+  active-id="{{ activeId }}"
+  max="{{ max }}"
+  bind:click-nav="onClickNav"
+  bind:click-item="onClickItem"
+/>
+  </view>
+</view>
