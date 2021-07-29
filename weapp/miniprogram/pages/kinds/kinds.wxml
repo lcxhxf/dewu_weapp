@@ -1,17 +1,50 @@
 <view class="page">
-  <view class="search" bindtap="gotoSearch">
-    <van-search placeholder="搜索商品"
-    input-align="center"
-    disabled/>
+  <van-sticky>
+    <view class="search" bindtap="gotoSearch">
+    <van-search placeholder="搜索商品" input-align="center" disabled />
   </view>
+  </van-sticky>
   <view class="kinds">
-    <van-tree-select
-  items="{{ items }}"
-  main-active-index="{{ mainActiveIndex }}"
-  active-id="{{ activeId }}"
-  max="{{ max }}"
-  bind:click-nav="onClickNav"
-  bind:click-item="onClickItem"
-/>
+    <view class="hd">
+    <scroll-view 
+    scroll-y="true"
+    style="height:100%;width:100%;"
+    class="scroll-view-left">
+      <view 
+      wx:for="{{kindNav}}"
+      wx:key="index"
+      data-index="{{index}}"
+      data-type="{{item.type}}"
+      bindtap="changeKinds"
+      class="scroll-view-left-item {{activeNavIndex == index?'active': ''}}">
+        <text>{{item.text}}</text>
+      </view>
+    </scroll-view>
+  </view>
+  <view class="bd">
+    <scroll-view scroll-y style="width:100%;height:100%;">
+      <view>
+        <view 
+        class="kind-title"
+        wx:for="{{kindTitle}}"
+        wx:key="index"
+        data-index="index">{{}}</view>
+        <van-grid column-num="3" border="{{ false }}">
+        <van-grid-item
+        use-slot
+        class="kindsItem"
+        wx:for="{{kindItem}}"
+        wx:key="index"
+        data-item="{{item}}">
+        <image
+          style="width: 100rpx; height: 64rpx;"
+          src="{{item.kindimg}}"
+        />
+        <text>{{item.title}}</text>
+        </van-grid-item>
+        </van-grid>
+      </view>
+    </scroll-view>
+  </view>
   </view>
 </view>

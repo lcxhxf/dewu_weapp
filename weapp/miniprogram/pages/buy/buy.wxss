@@ -1,20 +1,20 @@
-.weui-hd {
+.dewu-hd {
   display: flex;
 }
-.weui-hd-search {
+.dewu-hd-search {
   flex: 1;
 }
-.weui-kinds {
+.dewu-kinds {
   background-color: #fff;
   width: 100rpx;
   height: 108rpx;
 }
-.weui-kinds image {
+.dewu-kinds image {
   height: 68rpx;
   padding: 20rpx 24rpx;
   width: 52rpx;
 }
-.weui-tip-img {
+.dewu-tip-img {
   height: 250rpx;
 }
 .van-grid-hd .van-grid-item {
@@ -32,7 +32,4 @@
 }
 .van-items {
   margin-top: 30rpx;
-}
-.van-tabs__wrap .van-tabs__wrap--scrollable {
-  z-index: 1;
 }
