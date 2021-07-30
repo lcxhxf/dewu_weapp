@@ -6,7 +6,7 @@ module.exports = {
             "icon": "/../images/my_icon/my2.png"
         }],
         "buy": [{
-            "url": '',
+            "url": '../pages/my_page/buy_info/buy_info.wxml',
             "title": "购买",
             "icon": "/../images/my_icon/my6.png"
         }],

@@ -1,5 +1,5 @@
 // miniprogram/pages/my/my.js
-const { my_menu } = require('../../config/config.js')
+const { my_menu } = require('../../../config/config.js')
 const { pay, buy, collect, set } = my_menu;
 Page({
 
