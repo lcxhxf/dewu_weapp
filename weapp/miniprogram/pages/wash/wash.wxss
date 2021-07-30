@@ -128,6 +128,8 @@ page {
   width: 93.5185vw;
   height: 4.69065vh;
   margin-left: 3.33333vw;
+  display: flex;
+  justify-content: space-around;
 }
 .wash-6 {
   background: #ffffff;
