@@ -1,86 +1,56 @@
 // miniprogram/pages/kinds/kinds.js
+const {kindNav, kindItem} = require('../../config/kind')
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    mainActiveIndex: 0,
-    activeId: [],
-    max: 1,
-    items: [
-      {
-        text: '推荐',
-        children: [
-          {
-            text: '板鞋',
-            id: 1,
-            disabled: false,
-          },
-          {
-            text: '帆布鞋',
-            id: 2,
-          },
-        ],
-      },
-      {
-        text: '推荐',
-        children: [
-          {
-            text: '板鞋',
-            id: 1,
-            disabled: false,
-          },
-          {
-            text: '帆布鞋',
-            id: 2,
-          },
-        ],
-      },
-      {
-        text: '推荐',
-        children: [
-          {
-            text: '板鞋',
-            id: 1,
-            disabled: false,
-          },
-          {
-            text: '帆布鞋',
-            id: 2,
-          },
-        ],
-      },
-    ]
+    activeNavIndex:0,
+    kindNav:[],
+    kindItem:[],
+    kindall:[],
   },
-  onClickNav({ detail = {} }) {
+  changeKinds(e) {
+    console.log(e);
+    let {index, type} = e.currentTarget.dataset;
+    console.log(index, type);//index与推荐品牌的索引有关。type与kind.js的camptype
     this.setData({
-      mainActiveIndex: detail.index || 0,
-    });
-  },
-
-  onClickItem({ detail = {} }) {
-    const { activeId } = this.data;
-
-    const index = activeId.indexOf(detail.id);
-    if (index > -1) {
-      activeId.splice(index, 1);
-    } else {
-      activeId.push(detail.id);
-    }
-
-    this.setData({ activeId });
+      activeNavIndex: index,
+    })
+    let kinds = []
+    this.data.kindall.forEach(kind => {
+      if(kind.camptype == type) {
+        kinds.push(kind)
+      }
+    })
+    this.setData({
+      kindItem: kinds,
+    })
   },
   gotoSearch() {
     wx.navigateTo({
       url: '/pages/search/search',
     })
   },
-  /**
-   * 生命周期函数--监听页面加载
-   */
   onLoad: function (options) {
-
+    setTimeout(() => {
+      this.setData({
+        kindNav: kindNav,
+        kindall:kindItem,
+    })
+    // console.log(this.data.kindall);
+    let kinds=[]
+    // console.log(this.data.kindall)
+    this.data.kindall.forEach(kind => {
+      if(kind.camptype == 0) {
+        kinds.push(kind)
+      }
+    })
+    this.setData({
+      kindItem: kinds,
+    })
+    }, )
   },
 
   /**

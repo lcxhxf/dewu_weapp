@@ -45,5 +45,5 @@ module.exports = {
             "url": '',
             "title": "退出登录",
         }]
-    }
+    },
 }
