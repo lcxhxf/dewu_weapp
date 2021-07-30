@@ -6,10 +6,10 @@
                 <navigator url="{{item.url}}">
                     <view class="weui-cell weui-cell_access weui-cell_example ">
                         <view class="weui-cell__hd">
-                            <image class="head_img" src="../../images/my_icon/head_pic.jpg"></image>
+                            <image class="head_img" src="../../../images/my_icon/head_pic.jpg"></image>
                         </view>
                         <view class="weui-cell__bd">{{item.title}}<image class="sex_img"
-                                src="../../images/my_icon/sex.png"></image>
+                                src="../../../images/my_icon/sex.png"></image>
                         </view>
                     </view>
                 </navigator>
@@ -27,22 +27,22 @@
                         <view class="weui-cell__ft"></view>
                     </view>
                 </navigator>
-                <navigator>
+                <view>
                     <view class="weui-cell weui-cell_access weui-cell_example buy_info ">
                         <view>
-                            <image class="buy-img" src="../../images/my_icon/my11.png"></image>
+                            <image class="buy-img" src="../../../images/my_icon/my11.png"></image>
                             请付款
                         </view>
                         <view>
-                            <image class="buy-img" src="../../images/my_icon/my10.png"></image>
+                            <image class="buy-img" src="../../../images/my_icon/my10.png"></image>
                             待发货
                         </view>
                         <view>
-                            <image class="buy-img" src="../../images/my_icon/my9.png"></image>
+                            <image class="buy-img" src="../../../images/my_icon/my9.png"></image>
                             待收货
                         </view>
                     </view>
-                </navigator>
+                </view>
             </block>
             <block wx:for="{{collect}}" wx:key="index">
                 <navigator url="{{item.url}}">

@@ -1,6 +1,6 @@
-// miniprogram/pages/wash/wash.js
+// miniprogram/pages/buy_info/buy_info.js
 Page({
- 
+
   /**
    * 页面的初始数据
    */
@@ -12,7 +12,7 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    wx.hideTabBar()
+
   },
 
   /**
