@@ -27,8 +27,9 @@
         <view 
         class="kind-title"
         wx:for="{{kindTitle}}"
-        wx:key="index"
-        data-index="index">{{}}</view>
+        wx:key="index">
+        <van-divider contentPosition="center">{{item.title}}</van-divider>
+        </view>
         <van-grid column-num="3" border="{{ false }}">
         <van-grid-item
         use-slot
@@ -38,6 +39,27 @@
         data-item="{{item}}">
         <image
           style="width: 100rpx; height: 64rpx;"
+          src="{{item.kindimg}}"
+        />
+        <text>{{item.title}}</text>
+        </van-grid-item>
+        </van-grid>
+      </view>
+      <view>
+        <view 
+        class="kind-title"
+        wx:for="{{kindTitle1}}"
+        wx:key="index"
+        ><van-divider contentPosition="center">{{item.title}}</van-divider></view>
+        <van-grid column-num="3" border="{{ false }}">
+        <van-grid-item
+        use-slot
+        class="kindsItem"
+        wx:for="{{kindItem1}}"
+        wx:key="index"
+        data-item="{{item}}">
+        <image
+          style="width: 70rpx; height: 70rpx;"
           src="{{item.kindimg}}"
         />
         <text>{{item.title}}</text>

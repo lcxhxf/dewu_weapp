@@ -13,72 +13,219 @@
     title-inactive-color="#cccccc" title-active-color="#000000" class="dewu-tabs">
     <van-tab title="推荐">
       <view class="dewu-tip" bindtap="produce">
-        <view class="dewu-tip-img">
+        <view class="dewu-tip-img-hd">
           <image style="width:100%;height:250rpx;" src="../../images/produce.png"></image>
         </view>
         <van-grid class="van-grid-hd" border="{{ false }}" direction="horizontal" column-num="3">
           <van-grid-item use-slot>
-            <image style="width:24rpx;height:24rpx;" src="../../images/produce_tip1.png"></image>
-            正品保障
+            <image style="width:30rpx;height:30rpx;" src="../../images/produce_tip1.png"></image>
+            <text>正品保障</text>
           </van-grid-item>
           <van-grid-item use-slot>
-            <image style="width:24rpx;height:24rpx;" src="../../images/produce_tip2.png"></image>
-            逐件查验
+            <image style="width:30rpx;height:30rpx;" src="../../images/produce_tip2.png"></image>
+            <text>逐件查验</text>
           </van-grid-item>
           <van-grid-item use-slot>
-            <image style="width:24rpx;height:24rpx;" src="../../images/produce_tip3.png"></image>
-            多重鉴别
+            <image style="width:30rpx;height:30rpx;" src="../../images/produce_tip3.png"></image>
+            <text>多重鉴别</text>
           </van-grid-item>
         </van-grid>
       </view>
       <view class="van-items">
         <van-grid class="van-grid-bd" column-num="2">
-          <van-grid-item use-slot>
-            <image style="width:300rpx;height:300rpx;"
-              src="https://img1.baidu.com/it/u=2526426215,4168128738&fm=26&fmt=auto&gp=0.jpg"></image>
-            匡威1970s经典色
+          <van-grid-item use-slot wx:for="{{goods1}}" data-item="{{item}}" wx:key="index">
+            <view class="item-img"><image style="width:300rpx;height:192rpx;" src="{{item.pic}}"></image>
+            </view>
+            <view class="item-text">
+              <span class="text1">{{item.title}}</span>
+              <span class="text2">{{item.price}}</span>
+              <span class="text3">{{item.doh}}</span>
+            </view>
           </van-grid-item>
-          <van-grid-item use-slot>
-            <image style="width:300rpx;height:300rpx;"
-              src="https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fpic12.secooimg.com%2Fimgextra%2F1%2F4CKE%2F10%2F51%2F1ZWuaMd324faa6d8ca47d99d57b936f7566815.jpg&refer=http%3A%2F%2Fpic12.secooimg.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1629991677&t=f59e93682bcd7b2f258097560005034f">
-            </image>
-            匡威1970s姜黄色
-          </van-grid-item>
-          <van-grid-item use-slot>
-            <image style="width:300rpx;height:300rpx;"
-              src="https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fpic12.secooimg.com%2Fimgextra%2F1%2F4CKE%2F48%2F10%2F1Zg5Kv0e072778b53b414ca04fe2975ffe9bcb.jpg&refer=http%3A%2F%2Fpic12.secooimg.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1629991677&t=a32f6c93d18ff3fb72d922881391e85e">
-            </image>
-            匡威1970s米白色
-          </van-grid-item>
-          <van-grid-item use-slot>
-            <image style="width:300rpx;height:300rpx;"
-              src="https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fpic12.secooimg.com%2Fimgextra%2F1%2F4CKE%2F53%2F52%2F1Zk68A54b056ceb08e4d759f583d1b1b441f76.jpg&refer=http%3A%2F%2Fpic12.secooimg.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1629991677&t=7073141ebad458c4b988f8426138cf5d">
-            </image>
-            匡威1970s低帮黑
-          </van-grid-item>
-          <van-grid-item icon="photo-o" text="文字" wx:for="{{ 12 }}" />
         </van-grid>
       </view>
     </van-tab>
-    <van-tab title="鞋类">
-      <view class="van-items">
+    <van-tab title="鞋类"><view class="van-items">
         <van-grid class="van-grid-bd" column-num="2">
-          <van-grid-item icon="photo-o" text="文字" wx:for="{{ 12 }}" />
+          <van-grid-item use-slot wx:for="{{goods2}}" data-item="{{item}}" wx:key="index">
+            <view class="item-img"><image style="width:300rpx;height:192rpx;" src="{{item.pic}}"></image>
+            </view>
+            <view class="item-text">
+              <span class="text1">{{item.title}}</span>
+              <span class="text2">{{item.price}}</span>
+              <span class="text3">{{item.doh}}</span>
+            </view>
+          </van-grid-item>
         </van-grid>
-      </view>
-    </van-tab>
-    <van-tab title="潮服"></van-tab>
-    <van-tab title="手表"></van-tab>
-    <van-tab title="箱包"></van-tab>
-    <van-tab title="配饰"></van-tab>
-    <van-tab title="潮玩"></van-tab>
-    <van-tab title="运动"></van-tab>
-    <van-tab title="数码"></van-tab>
-    <van-tab title="美妆"></van-tab>
-    <van-tab title="女装"></van-tab>
-    <van-tab title="汽车"></van-tab>
-    <van-tab title="家居"></van-tab>
-    <van-tab title="家电"></van-tab>
-    <van-tab title="艺术"></van-tab>
+      </view></van-tab>
+    <van-tab title="潮服"><view class="van-items">
+        <van-grid class="van-grid-bd" column-num="2">
+          <van-grid-item use-slot wx:for="{{goods2}}" data-item="{{item}}" wx:key="index">
+            <view class="item-img"><image style="width:300rpx;height:192rpx;" src="{{item.pic}}"></image>
+            </view>
+            <view class="item-text">
+              <span class="text1">{{item.title}}</span>
+              <span class="text2">{{item.price}}</span>
+              <span class="text3">{{item.doh}}</span>
+            </view>
+          </van-grid-item>
+        </van-grid>
+      </view></van-tab>
+    <van-tab title="手表"><view class="van-items">
+        <van-grid class="van-grid-bd" column-num="2">
+          <van-grid-item use-slot wx:for="{{goods2}}" data-item="{{item}}" wx:key="index">
+            <view class="item-img"><image style="width:300rpx;height:192rpx;" src="{{item.pic}}"></image>
+            </view>
+            <view class="item-text">
+              <span class="text1">{{item.title}}</span>
+              <span class="text2">{{item.price}}</span>
+              <span class="text3">{{item.doh}}</span>
+            </view>
+          </van-grid-item>
+        </van-grid>
+      </view></van-tab>
+    <van-tab title="美妆"><view class="van-items">
+        <van-grid class="van-grid-bd" column-num="2">
+          <van-grid-item use-slot wx:for="{{goods2}}" data-item="{{item}}" wx:key="index">
+            <view class="item-img"><image style="width:300rpx;height:192rpx;" src="{{item.pic}}"></image>
+            </view>
+            <view class="item-text">
+              <span class="text1">{{item.title}}</span>
+              <span class="text2">{{item.price}}</span>
+              <span class="text3">{{item.doh}}</span>
+            </view>
+          </van-grid-item>
+        </van-grid>
+      </view></van-tab>
+    <van-tab title="配饰"><view class="van-items">
+        <van-grid class="van-grid-bd" column-num="2">
+          <van-grid-item use-slot wx:for="{{goods2}}" data-item="{{item}}" wx:key="index">
+            <view class="item-img"><image style="width:300rpx;height:192rpx;" src="{{item.pic}}"></image>
+            </view>
+            <view class="item-text">
+              <span class="text1">{{item.title}}</span>
+              <span class="text2">{{item.price}}</span>
+              <span class="text3">{{item.doh}}</span>
+            </view>
+          </van-grid-item>
+        </van-grid>
+      </view></van-tab>
+    <van-tab title="潮玩"><view class="van-items">
+        <van-grid class="van-grid-bd" column-num="2">
+          <van-grid-item use-slot wx:for="{{goods2}}" data-item="{{item}}" wx:key="index">
+            <view class="item-img"><image style="width:300rpx;height:192rpx;" src="{{item.pic}}"></image>
+            </view>
+            <view class="item-text">
+              <span class="text1">{{item.title}}</span>
+              <span class="text2">{{item.price}}</span>
+              <span class="text3">{{item.doh}}</span>
+            </view>
+          </van-grid-item>
+        </van-grid>
+      </view></van-tab>
+    <van-tab title="运动"><view class="van-items">
+        <van-grid class="van-grid-bd" column-num="2">
+          <van-grid-item use-slot wx:for="{{goods2}}" data-item="{{item}}" wx:key="index">
+            <view class="item-img"><image style="width:300rpx;height:192rpx;" src="{{item.pic}}"></image>
+            </view>
+            <view class="item-text">
+              <span class="text1">{{item.title}}</span>
+              <span class="text2">{{item.price}}</span>
+              <span class="text3">{{item.doh}}</span>
+            </view>
+          </van-grid-item>
+        </van-grid>
+      </view></van-tab>
+    <van-tab title="数码"><view class="van-items">
+        <van-grid class="van-grid-bd" column-num="2">
+          <van-grid-item use-slot wx:for="{{goods2}}" data-item="{{item}}" wx:key="index">
+            <view class="item-img"><image style="width:300rpx;height:192rpx;" src="{{item.pic}}"></image>
+            </view>
+            <view class="item-text">
+              <span class="text1">{{item.title}}</span>
+              <span class="text2">{{item.price}}</span>
+              <span class="text3">{{item.doh}}</span>
+            </view>
+          </van-grid-item>
+        </van-grid>
+      </view></van-tab>
+    <van-tab title="箱包"><view class="van-items">
+        <van-grid class="van-grid-bd" column-num="2">
+          <van-grid-item use-slot wx:for="{{goods2}}" data-item="{{item}}" wx:key="index">
+            <view class="item-img"><image style="width:300rpx;height:192rpx;" src="{{item.pic}}"></image>
+            </view>
+            <view class="item-text">
+              <span class="text1">{{item.title}}</span>
+              <span class="text2">{{item.price}}</span>
+              <span class="text3">{{item.doh}}</span>
+            </view>
+          </van-grid-item>
+        </van-grid>
+      </view></van-tab>
+    <van-tab title="女装"><view class="van-items">
+        <van-grid class="van-grid-bd" column-num="2">
+          <van-grid-item use-slot wx:for="{{goods2}}" data-item="{{item}}" wx:key="index">
+            <view class="item-img"><image style="width:300rpx;height:192rpx;" src="{{item.pic}}"></image>
+            </view>
+            <view class="item-text">
+              <span class="text1">{{item.title}}</span>
+              <span class="text2">{{item.price}}</span>
+              <span class="text3">{{item.doh}}</span>
+            </view>
+          </van-grid-item>
+        </van-grid>
+      </view></van-tab>
+    <van-tab title="汽车"><view class="van-items">
+        <van-grid class="van-grid-bd" column-num="2">
+          <van-grid-item use-slot wx:for="{{goods2}}" data-item="{{item}}" wx:key="index">
+            <view class="item-img"><image style="width:300rpx;height:192rpx;" src="{{item.pic}}"></image>
+            </view>
+            <view class="item-text">
+              <span class="text1">{{item.title}}</span>
+              <span class="text2">{{item.price}}</span>
+              <span class="text3">{{item.doh}}</span>
+            </view>
+          </van-grid-item>
+        </van-grid>
+      </view></van-tab>
+    <van-tab title="家居"><view class="van-items">
+        <van-grid class="van-grid-bd" column-num="2">
+          <van-grid-item use-slot wx:for="{{goods2}}" data-item="{{item}}" wx:key="index">
+            <view class="item-img"><image style="width:300rpx;height:192rpx;" src="{{item.pic}}"></image>
+            </view>
+            <view class="item-text">
+              <span class="text1">{{item.title}}</span>
+              <span class="text2">{{item.price}}</span>
+              <span class="text3">{{item.doh}}</span>
+            </view>
+          </van-grid-item>
+        </van-grid>
+      </view></van-tab>
+    <van-tab title="家电"><view class="van-items">
+        <van-grid class="van-grid-bd" column-num="2">
+          <van-grid-item use-slot wx:for="{{goods2}}" data-item="{{item}}" wx:key="index">
+            <view class="item-img"><image style="width:300rpx;height:192rpx;" src="{{item.pic}}"></image>
+            </view>
+            <view class="item-text">
+              <span class="text1">{{item.title}}</span>
+              <span class="text2">{{item.price}}</span>
+              <span class="text3">{{item.doh}}</span>
+            </view>
+          </van-grid-item>
+        </van-grid>
+      </view></van-tab>
+    <van-tab title="艺术"><view class="van-items">
+        <van-grid class="van-grid-bd" column-num="2">
+          <van-grid-item use-slot wx:for="{{goods2}}" data-item="{{item}}" wx:key="index">
+            <view class="item-img"><image style="width:300rpx;height:192rpx;" src="{{item.pic}}"></image>
+            </view>
+            <view class="item-text">
+              <span class="text1">{{item.title}}</span>
+              <span class="text2">{{item.price}}</span>
+              <span class="text3">{{item.doh}}</span>
+            </view>
+          </van-grid-item>
+        </van-grid>
+      </view></van-tab>
   </van-tabs>
 </view>
