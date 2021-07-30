@@ -1,11 +1,13 @@
 // miniprogram/pages/buy/buy.js
+const {goods1, goods2} = require('../../config/buys')
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-
+    goods1,
+    goods2,
   },
   gotoSearch() {
     wx.navigateTo({
