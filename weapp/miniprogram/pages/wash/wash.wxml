@@ -1,6 +1,6 @@
 <view class="wash-1">
   <view class="wash-1-1">
-  <view><image src="../../images/wash_icon/16-18-36.png" class="wash-1-1-left"></image></view>
+  <view bindtap="return"><image src="../../images/wash_icon/16-18-36.png" class="wash-1-1-left"></image></view>
   <view class="wash-1-1-auto"></view>
   <view><image src="../../images/wash_icon/16-19-05.png" class="wash-1-1-right"></image></view>
   </view>
@@ -15,23 +15,48 @@
 <view class="wash-4">
   <view class="wash-4-1">
     <view class="wash-4-1-1">
-    <view class="wash-4-1-1-all">
-      <view class="wash-4-1-1-img"><image style="width: 38.8888vw;height: 100%;"  src="../../images/wash_icon/21-41-43.png"></image></view>
-      <view class="wash-4-1-1-text1">手工球鞋洗护</view>
-    </view>
-    
+      <!-- <view class="wash-4-1-1-img"> -->
+      <!-- <image style="width: 38.8888vw;height: 100%;"  src="../../images/wash_icon/21-41-43.png"></image> -->
+      <!-- </view> -->
+      <view class="wash-4-1-1-text1">手工球鞋洗护</view> 
+      <view class="wash-4-1-1-text2">
+        <view class="wash-4-1-1-text2-left">￥39/双</view>
+        <view class="wash-4-1-1-text2-right">满3减10</view>
+      </view> 
+      <view class="wash-4-1-1-text3">
+        <view class="wash-4-1-1-text3-left"></view>
+        <view class="wash-4-1-1-text3-right">12道严苛工序</view>
+      </view>
+      <view class="wash-4-1-1-text4">
+        <view class="wash-4-1-1-text4-left"></view>
+        <view class="wash-4-1-1-text4-right">全程可追溯</view>
+      </view>
+      <view class="wash-4-1-1-text5">立即清洗</view> 
     </view>
     <view class="wash-4-1-2">
       <view class="wash-4-1-2-top">
-        <view class="wash-4-1-2-top-left"></view>
-        <view class="wash-4-1-2-top-right"></view>
+        <view class="wash-4-1-2-top-left">
+          <view class="wash-4-1-2-top-left-text1">奢包护理</view>
+          <view class="wash-4-1-2-top-left-text2">￥196/件</view>
+        </view>
+        <view class="wash-4-1-2-top-right">
+          <view class="wash-4-1-2-top-right-text1">YEEZZ350</view>
+          <view class="wash-4-1-2-top-right-text2">专洗满3减10</view>
+          <view class="wash-4-1-2-top-right-text3">￥59/双</view>
+        </view>
       </view>
-      <view class="wash-4-1-2-bottom"></view>
+      <view class="wash-4-1-2-bottom">
+        <view class="wash-4-1-2-bottom-text1">大黄靴</view>
+        <view class="wash-4-1-2-bottom-text2">￥59/双</view>
+      </view>
     </view>
   </view>
 </view>
 <view class="wash-5">
-  <view class="wash-5-1"></view>
+  <view class="wash-5-1">
+    <view class="wash-5-1-left">累计清洗446，899件</view>
+    <view class="wash-5-1-right">太阳100分钟前已购买</view>
+  </view>
 </view>
 <view class="wash-6">
   <view class="wash-6-1">
