@@ -1,5 +1,5 @@
 <view class="wash-1">
-  <view class="wash-1-1">
+  <view class="wash-1-1" >
   <view bindtap="return"><image src="../../images/wash_icon/16-18-36.png" class="wash-1-1-left"></image></view>
   <view class="wash-1-1-auto"></view>
   <view><image src="../../images/wash_icon/16-19-05.png" class="wash-1-1-right"></image></view>
@@ -20,8 +20,10 @@
       <!-- </view> -->
       <view class="wash-4-1-1-text1">手工球鞋洗护</view> 
       <view class="wash-4-1-1-text2">
-        <view class="wash-4-1-1-text2-left">￥39/双</view>
-        <view class="wash-4-1-1-text2-right">满3减10</view>
+        <view class="wash-4-1-1-text2-1">￥</view>
+        <view class="wash-4-1-1-text2-2">39</view>
+        <view class="wash-4-1-1-text2-3">/双</view>
+        <view class="wash-4-1-1-text2-4">满3减10</view>
       </view> 
       <view class="wash-4-1-1-text3">
         <view class="wash-4-1-1-text3-left"></view>
@@ -31,23 +33,40 @@
         <view class="wash-4-1-1-text4-left"></view>
         <view class="wash-4-1-1-text4-right">全程可追溯</view>
       </view>
-      <view class="wash-4-1-1-text5">立即清洗</view> 
+      <view class="wash-4-1-1-text5">
+        <view class="wash-4-1-1-text5-1">立即清洗</view>
+      </view> 
     </view>
     <view class="wash-4-1-2">
       <view class="wash-4-1-2-top">
         <view class="wash-4-1-2-top-left">
           <view class="wash-4-1-2-top-left-text1">奢包护理</view>
-          <view class="wash-4-1-2-top-left-text2">￥196/件</view>
+          <view class="wash-4-1-2-top-left-text2">
+            <view class="wash-4-1-2-top-left-text2-1">￥</view>
+            <view class="wash-4-1-2-top-left-text2-2">196</view>
+            <view class="wash-4-1-2-top-left-text2-3">/件</view>
+          </view>
         </view>
         <view class="wash-4-1-2-top-right">
           <view class="wash-4-1-2-top-right-text1">YEEZZ350</view>
-          <view class="wash-4-1-2-top-right-text2">专洗满3减10</view>
-          <view class="wash-4-1-2-top-right-text3">￥59/双</view>
+          <view class="wash-4-1-2-top-right-text2">
+            <view class="wash-4-1-2-top-right-text2-1">专洗</view>
+            <view class="wash-4-1-2-top-right-text2-2">满3减10</view>
+          </view>
+          <view class="wash-4-1-2-top-right-text3">
+            <view class="wash-4-1-2-top-right-text3-1">￥</view>
+            <view class="wash-4-1-2-top-right-text3-2">59</view>
+            <view class="wash-4-1-2-top-right-text3-3">/双</view>
+          </view>
         </view>
       </view>
       <view class="wash-4-1-2-bottom">
         <view class="wash-4-1-2-bottom-text1">大黄靴</view>
-        <view class="wash-4-1-2-bottom-text2">￥59/双</view>
+        <view class="wash-4-1-2-bottom-text2">
+            <view class="wash-4-1-2-bottom-text2-1">￥</view>
+            <view class="wash-4-1-2-bottom-text2-2">59</view>
+            <view class="wash-4-1-2-bottom-text2-3">/双</view>
+          </view>
       </view>
     </view>
   </view>

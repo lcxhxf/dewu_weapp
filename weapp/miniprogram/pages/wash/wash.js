@@ -7,10 +7,17 @@ Page({
   data: {
 
   },
-  return(event){
-    wx.navigateTo({
-      url: '/miniprogram/pages/buy/buy.wxml',
+  // return(){
+  //   wx.navigateTo({
+  //     url: '/pages/buy/buy',
+  //   })
+  // },
+  return() {
+  
+    wx.switchTab({
+      url: '/pages/buy/buy',
     })
+    
   },
   /**
    * 生命周期函数--监听页面加载
