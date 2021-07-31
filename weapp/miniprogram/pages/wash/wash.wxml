@@ -1,6 +1,6 @@
 <view class="wash-1">
   <view class="wash-1-1">
-  <view><image src="../../images/wash_icon/16-18-36.png" class="wash-1-1-left"></image></view>
+  <view bindtap="return"><image src="../../images/wash_icon/16-18-36.png" class="wash-1-1-left"></image></view>
   <view class="wash-1-1-auto"></view>
   <view><image src="../../images/wash_icon/16-19-05.png" class="wash-1-1-right"></image></view>
   </view>

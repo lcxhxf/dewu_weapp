@@ -1,4 +1,4 @@
-// miniprogram/pages/wash/wash.js
+
 Page({
  
   /**
@@ -7,7 +7,11 @@ Page({
   data: {
 
   },
-
+  return(event){
+    wx.navigateTo({
+      url: '/miniprogram/pages/buy/buy.wxml',
+    })
+  },
   /**
    * 生命周期函数--监听页面加载
    */
