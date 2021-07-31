@@ -1,3 +1,13 @@
+const dataList = [
+  {
+    id:1,
+    title:'你是个猪头'
+  },
+  {
+    id:2,
+    title:'哇呜'
+  }
+]
 
 Page({
  
@@ -5,7 +15,9 @@ Page({
    * 页面的初始数据
    */
   data: {
-
+    noticeList:{
+      dataList
+    }
   },
   // return(){
   //   wx.navigateTo({

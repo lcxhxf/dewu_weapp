@@ -71,12 +71,26 @@
     </view>
   </view>
 </view>
-<view class="wash-5">
-  <view class="wash-5-1">
-    <view class="wash-5-1-left">累计清洗446，899件</view>
-    <view class="wash-5-1-right">太阳100分钟前已购买</view>
+
+  <view class="notice-box">
+    <swiper class="notice_swiper" vertical autoplay circular interval="3000">
+      <swiper-item wx:for="{{noticeList.dataList}}" wx:key="id">
+        <van-notice-bar 
+          wx:if="{{noticeList}}"
+          mode="link"
+          scrollable
+          text="{{item.title}}"
+          background="#FFFFFF"
+          data-id="{{item.id}}"
+          speed="30"
+        >
+          <!-- <image slot="left-icon" class="notice-icon" 
+          src="../../images/home/notice.png"></image> -->
+        </van-notice-bar> 
+      </swiper-item>
+    </swiper>
   </view>
-</view>
+
 <view class="wash-6">
   <view class="wash-6-1">
     <view class="wash-6-1-top"></view>

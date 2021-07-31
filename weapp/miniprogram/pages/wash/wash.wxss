@@ -260,18 +260,39 @@ page {
   font-size: 15px;
   line-height: 26px;
 }
-.wash-5 {
+/* .wash-5 {
   background: #f6f8f9;
   width: 100vw;
-  height: 6.14638vh;
-}
-.wash-5-1 {
+  height: 88rpx;
+} */
+/* .wash-5-1 {
   background: pink;
   width: 93.5185vw;
   height: 4.69065vh;
   margin-left: 3.33333vw;
   display: flex;
   justify-content: space-around;
+} */
+.notice-box {
+  width: 100vw;
+  height: 88rpx;
+  line-height: 88rpx;
+  border-bottom: 1px solid #efeff4;
+}
+.notice_swiper {
+  height: 88rpx;
+  width: 100%;
+}
+.notice_itemr {
+  padding-left: 16rpx;
+  font-size: 24rpx;
+  overflow: hidden;
+  color: #e64340;
+}
+.notice-icon {
+  width: 130rpx;
+  height: 33rpx;
+  margin-right: 10rpx;
 }
 .wash-6 {
   background: #ffffff;
