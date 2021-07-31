@@ -71,26 +71,27 @@
     </view>
   </view>
 </view>
-
-  <view class="notice-box">
-    <swiper class="notice_swiper" vertical autoplay circular interval="3000">
-      <swiper-item wx:for="{{noticeList.dataList}}" wx:key="id">
-        <van-notice-bar 
-          wx:if="{{noticeList}}"
-          mode="link"
-          scrollable
-          text="{{item.title}}"
-          background="#FFFFFF"
-          data-id="{{item.id}}"
-          speed="30"
-        >
-          <!-- <image slot="left-icon" class="notice-icon" 
-          src="../../images/home/notice.png"></image> -->
-        </van-notice-bar> 
-      </swiper-item>
-    </swiper>
+<view class="wash-5">
+  <view class="wash-5-1">
+    <view class="wash-5-1-1">累计清洗</view>
+    <view class="wash-5-1-2">444,934</view>
+    <view class="wash-5-1-3">件</view>
   </view>
-
+  <view class="wash-5-2">
+    <!-- <view class="wash-5-2-1"></view> -->
+    <swiper class="wash-5-2-2 swiper_container" vertical="true" autoplay="true" circular="true" interval="2000">
+      <block wx:for="{{noticeList.dataList}}">
+        <swiper-item>
+          <view class="swiper_item">
+          <image class="wash-5-2-1" src="{{}}"/>
+          {{item.title}}已购买
+          </view>
+        </swiper-item>
+      </block>
+    </swiper>
+    <!-- <view class="wash-5-2-3">已购买</view> -->
+  </view>
+</view>
 <view class="wash-6">
   <view class="wash-6-1">
     <view class="wash-6-1-top"></view>

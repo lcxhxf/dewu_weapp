@@ -1,12 +1,20 @@
 const dataList = [
   {
     id:1,
-    title:'你是个猪头'
+    title:'路*** 3分钟前'
   },
   {
     id:2,
-    title:'哇呜'
-  }
+    title:'呜*** 1分钟前'
+  },
+  {
+    id:3,
+    title:'一*** 2分钟前'
+  },
+  {
+    id:4,
+    title:'周*** 4分钟前'
+  },
 ]
 
 Page({
