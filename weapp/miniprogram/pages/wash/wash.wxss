@@ -7,6 +7,7 @@ page {
 }
 .wash-1 {
   height: 11.1200vh;
+  position: relative;
 }
 .wash-1-1 {
   border: 1px solid #ececec;
@@ -40,6 +41,18 @@ page {
   float: right;
   margin-right: 4.16666vw;
   margin-top: 1.13222vh;
+}
+.wash-1-2-1 {
+  width:0vw ;
+  height: 0vh;
+}
+.wash-1-2-2 {
+  width:33.7962vw ;
+  height: 15.4468vh;
+  position: absolute;
+  top:1.73877vh;
+  left:2.03703vw ;
+  z-index: 0;
 }
 .wash-2 {
   height: 9.94743vh;

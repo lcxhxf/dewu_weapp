@@ -74,7 +74,14 @@ Page({
     },
     movies,
     pic,
-    pic2
+    pic2,
+    moreData:0,
+    option1: [
+      { text: '我的订单', value: 0 },
+      { text: '洗护优惠券', value: 1 },
+      { text: '我的客服', value: 2 },
+    ],
+    value1: 0
   },
   // return(){
   //   wx.navigateTo({
@@ -87,6 +94,11 @@ Page({
       url: '/pages/buy/buy',
     })
     
+  },
+  more() {
+    this.setData({
+      moreData:1
+    })
   },
   /**
    * 生命周期函数--监听页面加载
