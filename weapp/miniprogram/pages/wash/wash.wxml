@@ -154,5 +154,23 @@
     </view>
   </view>
 </view>
-<view class="wash-9"></view>
-<view class="wash-10"></view>
+<view class="wash-9">
+  <view class="wash-9-1">
+    <view class="wash-9-1-1">洗护流程</view>
+    <view class="wash-9-1-2">
+      <van-grid column-num="4">
+        <van-grid-item icon="{{item.url}}" text="{{item.title}}" wx:for="{{pic2}}" />
+      </van-grid>
+    </view>
+  </view>
+</view>
+<view class="wash-10">
+  <view class="wash-10-1">
+    <view class="wash-10-1-1"></view>
+    <view class="wash-10-1-2"></view>
+    <view class="wash-10-1-3">专业洗护 潮人智选</view>
+  </view>
+  <view class="wash-10-2">
+    <view class="wash-10-2-1">由焕然洗护联合得物App提供</view>
+  </view>
+</view>
