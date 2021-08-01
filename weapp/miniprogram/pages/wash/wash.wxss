@@ -468,3 +468,37 @@ page {
   position: absolute;
   bottom: 1vh;
 }
+.wash-7 {
+  width: 100%;
+  height: 27.6991vh;
+  background-color:#f6f8f9 ;
+}
+.wash-7-1 {
+  width: 93.5185vw;
+  height: 18.2369vh;
+  margin-left: 3.33333vw;
+  background-color: #ffffff;
+}
+.wash-7-1-1 {
+  width: 50vw;
+  height: 2.02183vh;
+  padding-top: 2vh;
+  margin-left: 2.61111vw;
+  font-size: 33rpx;
+    font-weight: 600;
+}
+.wash-7-1-2 {
+  width: 86.7592vw;
+  height: 14.21507vh;
+  margin-left: 2.61111vw;
+  margin-top: 1vh;
+}
+.swiper {
+  width: 86.7592vw;
+  height: 14.21507vh;
+}
+.swiper image {
+  width: 76.9233vw;
+  height: 10.3113vh;
+  margin-left: 7vw;
+}

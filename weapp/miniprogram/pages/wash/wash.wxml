@@ -129,7 +129,20 @@
     </view>
   </view>
 </view>
-<view class="wash-7"></view>
+<view class="wash-7">
+  <view class="wash-7-1">
+    <view class="wash-7-1-1">洗护前后对比</view>
+    <view class="wash-7-1-2">
+      <swiper class="swiper" indicator-color="#d5e6f8" indicator-active-color="#409fff" indicator-dots="true" autoplay="false" interval="5000" duration="1000">  
+        <block wx:for="{{movies}}" wx:key="index">  
+          <swiper-item>  
+            <image src="{{item.url}}" class="slide-image" mode="aspectFill"/>  
+          </swiper-item>  
+        </block>  
+      </swiper> 
+    </view>
+  </view>
+</view>
 <view class="wash-8"></view>
 <view class="wash-9"></view>
 <view class="wash-10"></view>
