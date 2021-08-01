@@ -470,12 +470,12 @@ page {
 }
 .wash-7 {
   width: 100%;
-  height: 27.6991vh;
+  height: 24.9494vh;
   background-color:#f6f8f9 ;
 }
 .wash-7-1 {
   width: 93.5185vw;
-  height: 18.2369vh;
+  height: 23.4937vh;
   margin-left: 3.33333vw;
   background-color: #ffffff;
 }
@@ -491,7 +491,7 @@ page {
   width: 86.7592vw;
   height: 14.21507vh;
   margin-left: 2.61111vw;
-  margin-top: 1vh;
+  margin-top: 3.55555vh;
 }
 .swiper {
   width: 86.7592vw;
@@ -501,4 +501,29 @@ page {
   width: 76.9233vw;
   height: 10.3113vh;
   margin-left: 7vw;
+}
+.wash-8 {
+  width: 100%;
+  height: 41.4880vh;
+  background-color: #f6f8f9;
+}
+.wash-8-1 {
+  width: 93.5185vw;
+  height: 40.1536vh;
+  margin-left: 3.33333vw;
+  background-color: #ffffff;
+}
+.wash-8-1-1 {
+  width: 50vw;
+  height: 2.02183vh;
+  padding-top: 2vh;
+  margin-left: 2.61111vw;
+  font-size: 33rpx;
+  font-weight: 600;
+}
+.wash-8-1-2 {
+  width: 93.5185vw;
+  height: 14.21507;
+  margin-left: 2.61111vw;
+  background-color: #ffffff;
 }
