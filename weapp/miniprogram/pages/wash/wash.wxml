@@ -148,7 +148,8 @@
     <view class="wash-8-1-1">为什么选择焕然</view>
     <view class="wash-8-1-2">
       <van-grid column-num="2">
-        <van-grid-item icon="photo-o" text="文字" wx:for="{{ 2 }}" />
+        <van-grid-item   icon="{{item.url}}" text="{{item.title1}}" wx:for="{{pic}}" >
+        </van-grid-item>
       </van-grid>
     </view>
   </view>

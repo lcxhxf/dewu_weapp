@@ -525,5 +525,14 @@ page {
   width: 93.5185vw;
   height: 14.21507;
   margin-left: 2.61111vw;
+  margin-top: 1vh;
   background-color: #ffffff;
+}
+.wash-8-1-2-img {
+  width: 42.7777vw;
+  height: 10.5944vh;
+}
+icon-class {
+  width: 42.7777vw;
+  height: 10.5944vh;
 }
