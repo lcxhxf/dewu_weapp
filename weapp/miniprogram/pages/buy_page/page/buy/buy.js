@@ -1,5 +1,5 @@
 // miniprogram/pages/buy/buy.js
-const {goods1, goods2} = require('../../config/buys')
+const {goods1, goods2} = require('../../../../config/buys')
 Page({
 
   /**
@@ -11,17 +11,22 @@ Page({
   },
   gotoSearch() {
     wx.navigateTo({
-      url: '/pages/search/search',
+      url: '/pages/buy_page/page/search/search',
+    })
+  },
+  gotoDetail() {
+    wx.navigateTo({
+      url: '/pages/buy_page/page/detail/detail',
     })
   },
   kinds() {
     wx.navigateTo({
-      url: '/pages/kinds/kinds',
+      url: '/pages/buy_page/page/kinds/kinds',
     })
   },
   produce() {
     wx.navigateTo({
-      url: '/pages/produce/produce',
+      url: '/pages/buy_page/page/produce/produce',
     })
   },
   /**
@@ -80,3 +85,6 @@ Page({
 
   }
 })
+
+
+ 
