@@ -1,5 +1,5 @@
 // miniprogram/pages/kinds/kinds.js
-const {kindNav, kindItem, kindTitle, kindTitle1,  kindItem1} = require('../../config/kind')
+const {kindNav, kindItem, kindTitle, kindTitle1,  kindItem1} = require('../../../../config/kind')
 Page({
 
   /**
@@ -19,7 +19,7 @@ Page({
   },
   gotoSearch() {
     wx.navigateTo({
-      url: '/pages/search/search',
+      url: '/pages/buy_page/page/search/search',
     })
   },
   changeKinds(e) {

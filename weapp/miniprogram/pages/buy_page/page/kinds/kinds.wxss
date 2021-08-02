@@ -29,7 +29,7 @@
 }
 .active {
   background-color: #fff;
-  color: rgb(5, 155, 155);
+  color: #00cbcc;
 }
 .van-grid-item__content text {
   font-size: 22rpx;
