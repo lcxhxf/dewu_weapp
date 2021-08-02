@@ -3,5 +3,6 @@
   scroll-y
   style="width:100%;height:100%;">
   <view class="img-1"></view>
+  <view></view>
   </scroll-view>
 </view>

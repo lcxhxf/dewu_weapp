@@ -20,7 +20,7 @@
 .van-grid-hd .van-grid-item {
   height: 80rpx;
   letter-spacing: 4rpx;
-  font-size: 24rpx;
+  font-size: 26rpx;
   font: bold;
   color: #333;
 }

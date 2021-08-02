@@ -21,7 +21,7 @@
     "compileHotReLoad": false,
     "useMultiFrameRuntime": true,
     "useApiHook": true,
-    "useApiHostProcess": false,
+    "useApiHostProcess": true,
     "babelSetting": {
       "ignore": [],
       "disablePlugins": [],
@@ -37,7 +37,11 @@
     "minifyWXSS": true,
     "bundle": false
   },
+<<<<<<< HEAD
   "appid": "wx8d2b4f36c92ae4ee",
+=======
+  "appid": "wx5605c999fe5c7768",
+>>>>>>> 4a12582a83f28d269584bb5408a4b4b41994ee25
   "projectname": "dewu",
   "libVersion": "2.14.1",
   "cloudfunctionTemplateRoot": "cloudfunctionTemplate",
