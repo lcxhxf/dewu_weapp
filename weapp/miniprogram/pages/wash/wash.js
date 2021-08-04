@@ -75,13 +75,7 @@ Page({
     movies,
     pic,
     pic2,
-    moreData:0,
-    option1: [
-      { text: '我的订单', value: 0 },
-      { text: '洗护优惠券', value: 1 },
-      { text: '我的客服', value: 2 },
-    ],
-    value1: 0
+    moreData:false,
   },
   // return(){
   //   wx.navigateTo({
@@ -96,9 +90,16 @@ Page({
     
   },
   more() {
-    this.setData({
-      moreData:1
-    })
+    if(!this.data.moreData){
+      this.setData({
+        moreData:true
+      })
+    }
+    else{
+      this.setData({
+        moreData:false
+      })
+    }
   },
   /**
    * 生命周期函数--监听页面加载
