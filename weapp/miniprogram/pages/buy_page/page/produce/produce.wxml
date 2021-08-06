@@ -1,8 +1,29 @@
 <view class="page">
-  <scroll-view 
-  scroll-y
-  style="width:100%;height:100%;">
-  <view class="img-1"></view>
-  <view></view>
+  <scroll-view scroll-y style="width:100%;height:100%;">
+    <view class="img-1"></view>
+    <view class="check__bd">
+      <view class="check__bd_infos" style="padding-bottom: 120rpx ;">
+        <view class="title_img" style="background-image: url({{info1.imgUrl}});">
+          {{info1.checkName}}</view>
+        <view class="check__bd_info" style="  padding-top: 80rpx;">
+          <h2 style="  color: #5F5F5F; font-size: 30rpx;">{{info1.checkInfo}}</h2>
+        </view>
+      </view>
+      <check-info2 info="{{info2}}"></check-info2>
+      <view class="img-2"></view>
+      <check-info3 info="{{info3}}"></check-info3>
+      <check-info3 info="{{info4}}"></check-info3>
+      <view class="img-3"></view>
+      <check-info2 info="{{info5}}"></check-info2>
+      <check-info3 info="{{info6}}"></check-info3>
+      <view class="img-4"></view>
+      <check-info1 info="{{info7}}"></check-info1>
+      <view class="img-5"></view>
+      <check-info1 info="{{info8}}"></check-info1>
+      <check-info1 info="{{info9}}"></check-info1>
+      <check-info1 info="{{info10}}"></check-info1>
+      <view class="img-6"></view>
+      <view class="img-7"></view>
+    </view>
   </scroll-view>
 </view>

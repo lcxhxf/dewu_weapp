@@ -1,5 +1,9 @@
 {
-  "usingComponents": {},
+  "usingComponents": {
+    "check-info1": "/components/check-info1/index",
+    "check-info2": "/components/check-info2/index",
+    "check-info3": "/components/check-info3/index"
+  },
   "backgroundColor": "#F6F6F6",
   "backgroundTextStyle": "light",
   "navigationBarBackgroundColor": "#F6F6F6",
