@@ -1,0 +1,229 @@
+<view class="wd-1">
+  <swiper class="swiper" indicator-color="#d5e6f8" indicator-active-color="#409fff" indicator-dots="true" autoplay="false" interval="5000" duration="1000">  
+        <block wx:for="{{movies}}" wx:key="index">  
+          <swiper-item>  
+            <image class="wd-1-img" src="{{item.url}}" class="slide-image" mode="aspectFill"/>  
+          </swiper-item>  
+        </block>  
+  </swiper> 
+  <view class="wd-1-1">
+  <view class="wash-1-1" >
+    <view bindtap="return"><image src="../../images/wash_icon/16-18-36.png" class="wash-1-1-left"></image></view>
+    <view class="wash-1-1-auto"></view>
+    <view bindtap="more"><image src="../../images/wash_icon/16-19-05.png" class="wash-1-1-right"></image></view>
+  </view>
+  <view class="{{moreData== 0?'wash-1-2-1':'wash-1-2-2'}}">
+      <view class="more-1">
+        <view class="more-1-img"></view>
+        <view class="more-text">我的订单</view>
+      </view>
+      <view class="more-2">
+        <view class="more-2-img"></view>
+        <view class="more-text">洗护优惠券</view>
+      </view>
+      <view class="more-3">
+        <view class="more-3-img"></view>
+        <view class="more-text">我的客服</view>
+      </view>
+    </view>
+</view>
+</view>
+<view class="wd-2">
+  <view class="wd-2-1">
+    <view class="wd-2-1-1">
+    <view class="wd-2-1-1-1">
+      <view class="left">
+        <view class="wd-2-1-1-1-1">￥</view>
+        <view class="wd-2-1-1-1-2">39</view>
+        <view class="wd-2-1-1-1-3">/双</view>
+        <view class="wd-2-1-1-1-4">满3减10</view>
+      </view>
+      <view class="right">
+        <view class="wd-2-1-1-1">426486已购买</view>
+      </view>
+    </view>
+    </view>
+    <view class="wd-2-1-2">焕然·球鞋深度清洗</view>
+    <view class="wd-2-1-3"></view>
+  </view>
+</view>
+<view class="wd-3">
+  <view class="wd-3-1">
+    <view class="wd-3-1-1">优惠</view>
+    <view class="wd-3-1-2">满2双减3元·满3双减10元</view>
+  </view>
+</view>
+<view class="wd-4">
+  <view class="wash-5-1">
+    <view class="wash-5-1-2">最近购买</view>
+  </view>
+  <view class="wash-5-2">
+    <!-- <view class="wash-5-2-1"></view> -->
+    <swiper class="wash-5-2-2 swiper_container" vertical="true" autoplay="true" circular="true" interval="2000">
+      <block wx:for="{{noticeList.dataList}}">
+        <swiper-item>
+          <view class="swiper_item">
+          <image class="wash-5-2-1" src="{{}}"/>
+          {{item.title}}已购买
+          </view>
+        </swiper-item>
+      </block>
+    </swiper>
+    <!-- <view class="wash-5-2-3">已购买</view> -->
+  </view>
+</view>
+<view class="wd-5">
+  <view class="wd-5-1">
+    <view class="wd-5-1-1">洗护前后对比</view>
+    <view class="wd-5-1-2">
+      <swiper class="swiper2" indicator-color="#d5e6f8" indicator-active-color="#409fff" indicator-dots="true" autoplay="false" interval="5000" duration="1000">  
+        <block wx:for="{{movies2}}" wx:key="index">  
+          <swiper-item>  
+            <image src="{{item.url}}" class="slide-image" mode="aspectFill"/>  
+          </swiper-item>  
+        </block>  
+      </swiper> 
+    </view>
+    <view class="wd-5-1-3"></view>
+    <view class="wd-5-1-4">
+      <view class="wd-5-1-4-1">增值服务</view>
+      <view class="wd-5-1-4-2">
+        <view class="wd-5-1-4-2-1">更多</view>
+        <view class="wd-5-1-4-2-2"></view>
+      </view>
+    </view>
+    <view class="wd-5-1-5">
+      <view class="wd-5-1-5-1">
+        <view class="wd-5-1-5-1-1"></view>
+        <view class="wd-5-1-5-1-2">绒面鞋补色</view>
+        <view class="wd-5-1-5-1-3">补色修复 解决掉色</view>
+      </view>
+      <view class="wd-5-1-5-2">
+        <view class="wd-5-1-5-2-1"></view>
+        <view class="wd-5-1-5-2-2">氧化修复</view>
+        <view class="wd-5-1-5-2-3">不伤球鞋 去黄增白</view>
+      </view>
+      <view class="wd-5-1-5-3">
+        <view class="wd-5-1-5-3-1"></view>
+        <view class="wd-5-1-5-3-2">粘胶修补</view>
+        <view class="wd-5-1-5-3-3">强效修补 解决开胶</view>
+      </view>
+    </view>
+  </view>
+</view>
+<view class="wd-6">
+  <view class="wd-6-1">
+    <view class="wd-6-1-1"></view>
+    <view class="wd-6-1-2">服务详情</view>
+    <view class="wd-6-1-3"></view>
+  </view>
+</view>
+<view class="wd-7">
+  <view class="wd-7-1">
+    <view class="wd-7-1-1"></view>
+    <view class="wd-7-1-2">全程绑扣更安心</view>
+    <view class="wd-7-1-3">全程绑定安全扣，一鞋一扣身份识别可追溯，高清摄像监控拆
+箱，洗前洗后存照杜绝调包。
+</view>
+  </view>
+  <view class="wd-7-2">
+    <image src="https://cdn.poizon.com/node-common/a1cf7de453d3c04b10d27be3faf005c9.png"></image>
+  </view>
+  <view class="wd-7-3">
+    <view class="wd-7-3-2">进口试剂分类清洗</view>
+    <view class="wd-7-3-3">根据球鞋材质，适配专业洗剂，有效除渍，使用进口设备，柔
+和烘干，强效杀菌。
+</view>
+  </view>
+  <view class="wd-7-4">
+    <image src="https://cdn.poizon.com/node-common/eac307e51eb71b63b340524a3185f543.png"></image>
+  </view>
+  <view class="wd-7-3">
+    <view class="wd-7-3-2">二次质检杜绝顽固污渍
+</view>
+    <view class="wd-7-3-3">鞋子微小缝隙棉签二次清理,更加精细。
+</view>
+  </view>
+  <view class="wd-7-5">
+    <image src="https://cdn.poizon.com/node-common/93389266df7bbc1d898ef3c3431118fc.png"></image>
+  </view>
+  <view class="wd-7-3">
+    <view class="wd-7-3-2">全新开箱体验专属包装
+</view>
+    <view class="wd-7-3-3">每双鞋内填充干燥剂及气泡枕，单独包装，给用户拆新鞋的体
+感。
+</view>
+  </view>
+  <view class="wd-7-6">
+    <image src="https://cdn.poizon.com/node-common/57b44e2f4417090d6d56a99c486299ad.png"></image>
+  </view>
+  <view class="wd-7-3">
+    <view class="wd-7-3-2">自洗烦恼交给焕然
+</view>
+    <view class="wd-7-3-3">焕然洗护团队由5-20年洗护匠人组成，为您全方位洗护同时,
+还能为您提供开胶修补、防水防护、塑封等服务，省时省心。
+</view>
+  </view>
+  <view class="wd-7-7">
+    <image src="https://cdn.poizon.com/node-common/c4e837ff92d7ee0bc116eb4d9931f209.png"></image>
+  </view>
+</view>
+<view class="wd-8">
+  <view class="wd-8-1"> 
+    <view class="wd-8-1-1">
+      <image src="https://cdn.poizon.com/node-common/d2c7cf65b42ec6e52986df3e6807b4ca.png"></image>
+    </view>
+  </view>
+  <image class="wd-8-2" src="https://cdn.poizon.com/node-common/731cf6155e3539a0ce4287740501ffa9.png"></image>
+  <image class="wd-8-3" src="https://cdn.poizon.com/node-common/8efdad689ad93abe3a2343826db89fd8.png"></image>
+  <view class="wd-8-1"> 
+    <view class="wd-8-1-1">
+      <image src="https://cdn.poizon.com/node-common/a87722817358bac8bb174de8df3255f6.png"></image>
+    </view>
+  </view>
+  <view class="wd-8-4">
+    <view class="wd-8-4-1">
+      <image src="https://cdn.poizon.com/node-common/aea2aad1b57e4d15a284041c83820ff1.png"></image>
+      <image src="https://cdn.poizon.com/node-common/0a1e60851fbcb4ed50b9d59d172d8057.png"></image>
+      <image src="https://cdn.poizon.com/node-common/e682b172f593cd0f4b5fcac88828a45e.png"></image>
+      <image src="https://cdn.poizon.com/node-common/339f48101849119d34263b53558bbabe.png"></image>
+    </view>
+    <view class="wd-8-4-2">
+      <text>在线下单</text>
+      <text>进厂洗护</text>
+      <text>质检出厂</text>
+      <text>配送到家</text>
+    </view>
+    
+  </view>
+  <view class="wd-8-5">
+    <image src="https://cdn.poizon.com/node-common/faf2718dce1e84032c30b983a8174151.png"></image>
+  </view>
+  <view class="wd-8-6"> 
+    <view class="wd-8-6-1">
+      <image src="https://cdn.poizon.com/node-common/6956da5bf52c0557384c0492880b08ed.png"></image>
+    </view>
+  </view>
+  <view class="wd-8-7">
+    <view class="wd-8-7-1">
+      <view class="wd-8-7-1-1">1.哪些鞋子不可以清洗?
+</view>
+      <view class="wd-8-7-1-2">雪地靴；带电子元件的鞋。严重被损(开肢眼源断配司
+化爆漆等) ;严重褪色或染色的鞋。
+</view>
+    </view>
+    <view class="wd-8-7-1 wd-8-7-1-3">
+      <view class="wd-8-7-1-1">2.清洗周期是多久?
+</view>
+      <view class="wd-8-7-1-2">鞋子进厂后48小时完成洗护并寄出，配送时间根据快递配送时
+间确定。
+</view>
+    </view>
+    <view class="wd-8-7-1  wd-8-7-1-3">
+      <view class="wd-8-7-1-1 ">3.所有的污渍都可以去除吗?
+</view>
+      <view class="wd-8-7-1-2">清洗过程中使用专业环保材料，在不损坏鞋子材质的情况下可以清除绝大部分污清。但是存在部分污清无法彻底清除，过度清除有可能会损伤鞋子材质。
+</view>
+    </view>
+  </view>
+</view>

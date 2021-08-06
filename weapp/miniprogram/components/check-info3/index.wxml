@@ -1,0 +1,9 @@
+<view class="check__bd_infos">
+  <view class="check__bd_list">
+    <h1>{{info.number}}</h1>
+    <h2>{{info.infoName}}</h2>
+  </view>
+  <view class="check__bd_info">
+    <h2>{{info.checkInfo}}</h2>
+  </view>
+</view>
