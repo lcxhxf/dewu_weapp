@@ -4,15 +4,68 @@ const movies= [
   {url:'https://cdn.poizon.com/node-common/28aaa593c6745b34f72ac1b897379919.png'},
   {url:'https://cdn.poizon.com/node-common/ff6ff0494a92cb9fd62054dbe6271551.png'},
   ]
+  const movies2= [  
+    {url:'https://cdn.poizon.com/node-common/5bb538fac62a15db8b0df65a61fbbdf2.png'} ,
+    {url:'https://cdn.poizon.com/node-common/846ad08cb72d47df8dbf490cfbfbcd0f.png'}  
+    ] 
+  const dataList = [
+    {
+      id:1,
+      title:'路*** 3分钟前'
+    },
+    {
+      id:2,
+      title:'呜*** 1分钟前'
+    },
+    {
+      id:3,
+      title:'一*** 2分钟前'
+    },
+    {
+      id:4,
+      title:'周*** 4分钟前'
+    },
+  ]
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    movies
+    movies,
+    movies2,
+    noticeList:{
+      dataList
+    },
+    moreData:false,
   },
-
+  return() {
+    // wx.navigateTo({
+    //   url: '/page/wash/wash',
+    // })
+    wx.switchTab({
+      url: '/page/wash/wash',
+    })
+    
+  },
+  more() {
+    if(!this.data.moreData){
+      this.setData({
+        moreData:true
+      })
+    }
+    else{
+      this.setData({
+        moreData:false
+      })
+    }
+  },
+  /**
+   * 生命周期函数--监听页面加载
+   */
+  onLoad: function (options) {
+    wx.hideTabBar()
+  },
   /**
    * 生命周期函数--监听页面加载
    */

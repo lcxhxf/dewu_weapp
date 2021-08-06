@@ -27,7 +27,7 @@
 <view class="wash-3">
   <image  src="../../images/wash_icon/16-19-12.png" class="wash-3-img"></image>
 </view>
-<view class="wash-4">
+<view class="wash-4" bindtap="toDetail">
   <view class="wash-4-1">
     <view class="wash-4-1-1">
       <!-- <view class="wash-4-1-1-img"> -->

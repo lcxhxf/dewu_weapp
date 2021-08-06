@@ -82,10 +82,17 @@ Page({
   //     url: '/pages/buy/buy',
   //   })
   // },
+  toDetail() {
+    wx.navigateTo({
+      url: '/pages/wash_detail1/wash_detail1',
+    })
+  },
   return() {
-  
+    // wx.navigateTo({
+    //   url: '/miniprogram/pages/buy/buy.wxml',
+    // })
     wx.switchTab({
-      url: '/pages/buy/buy',
+      url: '/pages/buy_page/page/buy/buy',
     })
     
   },
