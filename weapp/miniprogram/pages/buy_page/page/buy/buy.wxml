@@ -33,13 +33,13 @@
       </view>
       <view class="van-items">
         <van-grid class="van-grid-bd" column-num="2">
-          <van-grid-item use-slot wx:for="{{goods1}}" data-item="{{item}}" wx:key="index" bindtap="gotoDetail">
+          <van-grid-item use-slot wx:for="{{produces}}" data-item="{{item}}" wx:key="index" data-id="{{item._id}}" bindtap="gotoDetail">
             <view class="item-img"><image style="width:300rpx;height:192rpx;" src="{{item.pic}}"></image>
             </view>
             <view class="item-text">
               <span class="text1">{{item.title}}</span>
-              <span class="text2">{{item.price}}</span>
-              <span class="text3">{{item.doh}}</span>
+              <span class="text2">￥{{item.price}}</span>
+              <span class="text3">{{item.buyer}}人付款</span>
             </view>
           </van-grid-item>
         </van-grid>
@@ -47,13 +47,13 @@
     </van-tab>
     <van-tab title="鞋类"><view class="van-items">
         <van-grid class="van-grid-bd" column-num="2">
-          <van-grid-item use-slot wx:for="{{goods2}}" data-item="{{item}}" wx:key="index">
+          <van-grid-item use-slot wx:for="{{shoes}}" data-item="{{item}}" wx:key="index" data-id="{{item._id}}" bindtap="gotoDetail">
             <view class="item-img"><image style="width:300rpx;height:192rpx;" src="{{item.pic}}"></image>
             </view>
             <view class="item-text">
               <span class="text1">{{item.title}}</span>
-              <span class="text2">{{item.price}}</span>
-              <span class="text3">{{item.doh}}</span>
+              <span class="text2">￥{{item.price}}</span>
+              <span class="text3">{{item.buyer}}人付款</span>
             </view>
           </van-grid-item>
         </van-grid>

@@ -1,4 +1,6 @@
 // miniprogram/pages/buy_page/page/detail/detail.js
+const db = wx.cloud.database()
+const dewuCollection = db.collection('dewu')
 const {headimg, size, produceimg} = require('../../../../config/detail')
 const {goods2} = require('../../../../config/buys')
 Page({
@@ -6,6 +8,8 @@ Page({
    * 页面的初始数据
    */
   data: {
+    activeSizeIndex: -1,
+    flag: -1,
     goods2,
     produceimg,
     headimg,
@@ -14,7 +18,27 @@ Page({
     show2: false,
     //轮播图当前的下标
     current: 0,
-    current2: 0
+    current2: 0,
+    img: []
+  },
+  preview(e) {
+    console.log(e);
+  },
+  pickSize(e) {
+    let flag = e.currentTarget.dataset.flag
+    let index = e.currentTarget.dataset.index
+    if(flag==index) {
+      this.setData({
+        activeSizeIndex: -1,
+        flag: -1
+      }) 
+    }
+    else {
+      this.setData({
+        activeSizeIndex: index,
+        flag: index
+      }) 
+    }
   },
   showPopup1() {
     this.setData({ 
@@ -58,8 +82,27 @@ Page({
       url: '/pages/buy_page/page/produce/produce',
     })
   },
-  onLoad: function (options) {
-
+  
+  async onLoad(options) {
+    console.log(options);
+    let id = options.id
+    console.log(id);
+    wx.cloud.database().collection('dewu')
+    .doc(id)
+    .get()
+    .then(res => {
+      console.log(res);
+      this.setData({
+       img :res.data
+      })
+    })
+    // let {data: info} = await postsCollection
+    //   .doc(_id)
+    //   .get()
+    // console.log(info);
+    // this.setData({
+    //   posts: info
+    // })
   },
 
   /**

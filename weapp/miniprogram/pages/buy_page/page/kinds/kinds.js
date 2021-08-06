@@ -17,6 +17,12 @@ Page({
     kindTitles1: [],
     kindTitle1: []
   },
+  gotoAssem(e) {
+    // console.log(e);
+    wx.navigateTo({
+      url: '/pages/buy_page/page/assem/assem?title='+e.currentTarget.dataset.title,
+    })
+  },
   gotoSearch() {
     wx.navigateTo({
       url: '/pages/buy_page/page/search/search',

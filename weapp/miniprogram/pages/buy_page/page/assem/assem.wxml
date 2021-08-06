@@ -1,0 +1,27 @@
+<view class="page">
+  <van-sticky>
+    <view class="search" bindtap="gotoSearch">
+      <van-search placeholder="{{titles}}" disabled />
+    </view>
+    <view class="tab">
+      <view wx:for="{{tabs}}" wx:key="index" data-index="{{index}}"
+        class="tab-item {{activeTabIndex == index?'active': ''}}" bindtap="changeItem">
+        <text>{{item.title}}</text>
+        <image style="width:26rpx;height:26rpx;" src="{{item.pic}}"></image>
+      </view>
+    </view>
+  </van-sticky>
+  <van-grid class="van-grid-bd" column-num="2">
+    <van-grid-item use-slot wx:for="{{goods}}" data-item="{{item}}" wx:key="index" data-id="{{item._id}}"
+      bindtap="gotoDetail">
+      <view class="item-img">
+        <image style="width:300rpx;height:192rpx;" src="{{item.pic}}"></image>
+      </view>
+      <view class="item-text">
+        <span class="text1">{{item.title}}</span>
+        <span class="text2">￥{{item.price}}</span>
+        <span class="text3">{{item.buyer}}人付款</span>
+      </view>
+    </van-grid-item>
+  </van-grid>
+</view>

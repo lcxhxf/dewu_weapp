@@ -1,4 +1,6 @@
 // miniprogram/pages/buy/buy.js
+const db = wx.cloud.database()
+const dewuCollection = db.collection('dewu')
 const {goods1, goods2} = require('../../../../config/buys')
 Page({
 
@@ -8,15 +10,18 @@ Page({
   data: {
     goods1,
     goods2,
+    produces: [],
+    shoes: []
+  },
+  gotoDetail(e) {
+    console.log(e);
+    wx.navigateTo({
+      url: '/pages/buy_page/page/detail/detail?id='+e.currentTarget.dataset.id,
+    })
   },
   gotoSearch() {
     wx.navigateTo({
       url: '/pages/buy_page/page/search/search',
-    })
-  },
-  gotoDetail() {
-    wx.navigateTo({
-      url: '/pages/buy_page/page/detail/detail',
     })
   },
   kinds() {
@@ -32,8 +37,31 @@ Page({
   /**
    * 生命周期函数--监听页面加载
    */
-  onLoad: function (options) {
+  async onLoad() {
+    const {data} = await dewuCollection
+    .where({
+      amway: db.command.eq('TRUE')
+    })
+    .field({
+      _id:true,
+      pic:true,
+      title:true,
+      buyer:true,
+      price:true
+    })  
+    .get()
+    // console.log(data);
 
+    let data1 = await dewuCollection
+    .where({
+      type: 1
+    }) 
+    .get()
+    // console.log(data1.data);
+    this.setData({
+      produces: data,
+      shoes: data1.data
+    })
   },
 
   /**

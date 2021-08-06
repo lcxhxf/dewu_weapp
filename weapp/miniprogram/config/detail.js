@@ -20,37 +20,37 @@ var data = {
     {
       "type": "0",
       "size": "XS",
-      "price": "￥139"
+      "price": "139"
     },
     {
       "type": "1",
       "size": "S",
-      "price": "￥139"
+      "price": "139"
     },
     {
       "type": "2",
       "size": "M",
-      "price": "￥139"
+      "price": "139"
     },
     {
       "type": "3",
       "size": "L",
-      "price": "￥139"
+      "price": "139"
     },
     {
       "type": "4",
       "size": "XL",
-      "price": "￥139"
+      "price": "139"
     },
     {
       "type": "5",
       "size": "XXL",
-      "price": "￥139"
+      "price": "139"
     },
     {
       "type": "6",
       "size": "XXXL",
-      "price": "￥139"
+      "price": "139"
     },
   ],
   "produceimg": [
