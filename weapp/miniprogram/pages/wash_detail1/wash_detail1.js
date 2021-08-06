@@ -1,11 +1,16 @@
-// miniprogram/pages/wash_detail1/wash_detail1.js
+const movies= [  
+  {url:'https://cdn.poizon.com/node-common/c04c0a9f91aef6a481c3852aaa01df9a.png'},
+  {url:'https://cdn.poizon.com/node-common/13b825be0695aba4651fd58ad77e7562.png'},
+  {url:'https://cdn.poizon.com/node-common/28aaa593c6745b34f72ac1b897379919.png'},
+  {url:'https://cdn.poizon.com/node-common/ff6ff0494a92cb9fd62054dbe6271551.png'},
+  ]
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-
+    movies
   },
 
   /**

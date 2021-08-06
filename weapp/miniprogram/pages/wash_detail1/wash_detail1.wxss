@@ -1,1 +1,78 @@
-/* miniprogram/pages/wash_detail1/wash_detail1.wxss */
+page {
+  height: 100vh;
+  width: 100vw;
+  background:#f6f8f9;
+}
+.wd-1{
+  width: 100%;
+  height: 32.5111vh;
+  position: relative;
+}
+.swiper {
+  width: 100%;
+  height: 32.5111vh;
+}
+.swiper image {
+  width: 100%;
+  height: 100%;
+}
+.wd-1-1 {
+  height: 11.1200vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.wash-1-1 {
+  border: 1px solid #ececec;
+  background: #ffffff;
+  width: 23.0555vw;
+  height: 3.67974vh;
+  float: left;
+  margin-left: 3.33333vw;
+  border-radius: 30px;
+  margin-top: 5.62070vh;
+  /* padding-top:6.7207vh; */
+}
+.wash-1-1-left {
+  width: 2.22222vw;
+  height: 1.53659vh;
+  float: left;
+  margin-left: 4.16666vw;
+  margin-top: 1.13222vh;
+}
+.wash-1-1-auto {
+  background: #ececec;
+  width: 1px;
+  height: 2.30489vh;
+  float: left;
+  margin-left: 4.64814vw;
+  margin-top: 0.566114vh;
+  
+}
+.wash-1-1-right {
+  width: 3.14814vw;
+  height: 1.53659vh;
+  float: right;
+  margin-right: 4.16666vw;
+  margin-top: 1.13222vh;
+}
+.wd-2 {
+  width: 100%;
+  height: 19.6118vh;
+  background: #f4f6f8;
+}
+.wd-2-1 {
+  width: 93.7037vw;
+  height: 19.6118vh;
+  background: #ffffff;
+  margin-left: 3.14814vw;
+}
+.wd-2-1-1,wd-2-1-2 {
+  
+}
+.wd-3{
+
+}
+.wd-3-1 {
+
+}
