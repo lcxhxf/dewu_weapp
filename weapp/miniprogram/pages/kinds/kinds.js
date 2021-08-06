@@ -1,34 +1,13 @@
-// miniprogram/pages/buy/buy.js
-const {goods1, goods2} = require('../../../../config/buys')
+// pages/kinds/kinds.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    goods1,
-    goods2,
+
   },
-  gotoSearch() {
-    wx.navigateTo({
-      url: '/pages/buy_page/page/search/search',
-    })
-  },
-  gotoDetail() {
-    wx.navigateTo({
-      url: '/pages/buy_page/page/detail/detail',
-    })
-  },
-  kinds() {
-    wx.navigateTo({
-      url: '/pages/buy_page/page/kinds/kinds',
-    })
-  },
-  produce() {
-    wx.navigateTo({
-      url: '/pages/buy_page/page/produce/produce',
-    })
-  },
+
   /**
    * 生命周期函数--监听页面加载
    */
@@ -47,9 +26,7 @@ Page({
    * 生命周期函数--监听页面显示
    */
   onShow: function () {
-    wx.showTabBar({
-      animation: true,
-    })
+
   },
 
   /**
@@ -87,6 +64,3 @@ Page({
 
   }
 })
-
-
- 
