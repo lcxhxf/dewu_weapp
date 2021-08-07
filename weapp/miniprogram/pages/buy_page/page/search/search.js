@@ -11,6 +11,7 @@ Page({
     results: []
   },
   onSearch(e) {
+    console.log(e);
     let keyword = e.detail
     if (!keyword.trim()) {
       wx.showToast({

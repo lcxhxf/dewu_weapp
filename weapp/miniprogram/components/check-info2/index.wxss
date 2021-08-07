@@ -1,0 +1,11 @@
+.img-2 {
+  height: 78rpx;
+  background-size: 24%;
+  background-repeat: no-repeat;
+  font-size: 55rpx;
+  line-height: 120rpx;
+}
+.check__bd_infos {
+  padding-bottom: 80rpx ;
+}
+

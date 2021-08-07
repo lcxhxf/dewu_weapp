@@ -1,0 +1,19 @@
+.check__bd_info h2 {
+  color: #5F5F5F;
+  font-size: 30rpx;
+}
+.check__bd_infos {
+  padding-top: 60rpx;
+}
+.check__bd_list {
+  padding-bottom: 15rpx;
+}
+.check__bd_list h1 {
+  font-family: 'Consolas';
+  color: #DFE3E7;
+  font-size: 50rpx;
+}
+.check__bd_list h2 {
+  font-size: 36rpx;
+  padding-left: 10rpx;
+}

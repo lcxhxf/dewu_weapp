@@ -1,0 +1,17 @@
+.img-2 {
+  height: 78rpx;
+  background-size: 30%;
+  background-repeat: no-repeat;
+  font-size: 55rpx;
+  line-height: 120rpx;
+}
+.check__bd_infos {
+  padding-bottom: 100rpx ;
+}
+.check__bd_info h2 {
+  color: #5F5F5F;
+  font-size: 30rpx;
+}
+.info1 {
+  padding-top: 80rpx;
+}

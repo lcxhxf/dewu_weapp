@@ -225,6 +225,6 @@ var data = {
       "camptype": "0",
       "kindimg": "https://cdn.poizon.com/source-img/brand-img//74c02c5de3d6461d8a9ab11b48d3ec54-577.png?x-oss-process=image/resize,m_lfit,w_100/format,webp"
     },
-  ]
+  ],
 }
 module.exports = data

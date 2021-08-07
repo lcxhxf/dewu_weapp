@@ -1,0 +1,6 @@
+{
+  "component": true,
+  "usingComponents": {
+    "check-info3": "/components/check-info3/index"
+  }
+}

@@ -1,0 +1,7 @@
+<view class="check__bd_infos">
+  <view class="img-2" style="background-image: url({{info.imgUrl}});">
+    {{info.checkName}}</view>
+  <view class="check__bd_info info1">
+    <h2>{{info.checkInfo}}</h2>
+  </view>
+</view>
