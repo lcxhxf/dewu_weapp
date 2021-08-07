@@ -87,6 +87,11 @@ Page({
       url: '/pages/wash_detail1/wash_detail1',
     })
   },
+  toRecord() {
+    wx.navigateTo({
+      url: '/pages/wash_detail2/wash_detail2',
+    })
+  },
   return() {
     // wx.navigateTo({
     //   url: '/miniprogram/pages/buy/buy.wxml',

@@ -39,12 +39,12 @@ Page({
     },
     moreData:false,
   },
-  return() {
+  return(e) {
     // wx.navigateTo({
-    //   url: '/page/wash/wash',
+    //   url: '/pages/wash/wash',
     // })
     wx.switchTab({
-      url: '/page/wash/wash',
+      url: '/pages/wash/wash',
     })
     
   },
