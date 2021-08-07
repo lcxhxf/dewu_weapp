@@ -1,0 +1,6 @@
+<view class="wd-1">
+  <view class="wd-1-1" bindtap="return">
+    <image src="https://cdn.poizon.com/node-common/YmFja0AzeDE1OTM3NTU3NDQ4NDk=.png"></image>
+  </view>
+  <view class="wd-1-2">增值服务</view>
+</view>

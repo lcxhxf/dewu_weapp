@@ -1,0 +1,26 @@
+<view class="dist1">
+  <image src="https://cdn.poizon.com/node-common/aW5kZW50aWZ5VGV4dDE1OTM3NTQ4Njc0NDM=.png"></image>
+</view>
+<view class="dist2">
+  <view class="dist2-1"></view>
+  <view class="dist2-2">累计鉴别数已超过1000万件</view>
+  <view class="dist2-3"></view>
+</view>
+<view class="dist3">
+  <image src="https://cdn.poizon.com/node-common/aW5kZW50aWZ5TG9nbzE1OTM3NTQ4MzQ1NTY=.png"></image>
+</view>
+<view class="dist4">
+  <view class="dist4-1">
+    <view class="dist-4-1-1">
+      <input type="number"  placeholder="输入鉴别ID" placeholder-style='text-align: center;'/>
+    </view>
+  </view>
+</view>
+<view class="dist5">
+  <view class="dist5-1">
+    <view class="dist5-1-1">
+      <button class="dist5-1-1-bt"><text>查询</text></button>
+      <view class="dist-5-1-1-text"><text>鉴别ID在鉴别报告下方</text></view>
+    </view>
+  </view>
+</view>

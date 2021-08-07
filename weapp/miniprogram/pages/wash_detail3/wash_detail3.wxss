@@ -1,0 +1,15 @@
+.wd-1 {
+  display: flex;
+  height: 11vh;
+  background: #f8f8f8;
+}
+.wd-1-1 image{
+  width: 20px;
+  height: 20px;
+  margin-left: 3vw;
+  margin-top: 7.3vh;
+}
+.wd-1-2 {
+  margin-top: 7vh;
+  margin-left: 2vw;
+}
