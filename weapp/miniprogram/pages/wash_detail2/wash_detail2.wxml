@@ -1,0 +1,19 @@
+<view class="wd-1">
+  <view class="wd-1-1" bindtap="return">
+    <image src="https://cdn.poizon.com/node-common/YmFja0AzeDE1OTM3NTU3NDQ4NDk=.png"></image>
+  </view>
+  <view class="wd-1-2">购买记录</view>
+</view>
+<view class="wd-2">
+  <view class="xunhuang"  wx:for="{{record}}">
+    <view class="wd-2-1" >
+      <view class="wd-2-1-1">
+        <image src="{{item.url}}"></image>
+      </view>
+      <view class="wd-2-1-2">{{item.name}}</view>
+      <view class="wd-2-1-3">清洗{{item.count}}双</view>
+  </view>
+    <view class="wd-2-1-4">{{item.time}}</view>
+  </view>
+</view>
+<view class="wd-3">暂时只显示一部分购买记录</view>
