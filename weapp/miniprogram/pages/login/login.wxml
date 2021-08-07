@@ -1,0 +1,5 @@
+<view class="wash-1-1" >
+  <view bindtap="return"><image src="https://cdn.poizon.com/node-common/YmFja0AzeDE1OTM3NTU3NDQ4NDk=.png" class="wash-1-1-left"></image></view>
+  <view class="wash-1-1-auto"></view>
+  <view bindtap="more"><image src="https://cdn.poizon.com/node-common/aG9tZUAzeDE1OTM3NTU3MDU5MjM=.png" class="wash-1-1-right"></image></view>
+  </view>
