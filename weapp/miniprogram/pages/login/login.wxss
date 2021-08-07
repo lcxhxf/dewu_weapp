@@ -1,0 +1,33 @@
+.wash-1-1 {
+  border: 1px solid #ececec;
+  width: 23.0555vw;
+  height: 3.67974vh;
+  float: left;
+  margin-left: 3.33333vw;
+  border-radius: 30px;
+  margin-top: 5.62070vh;
+  /* padding-top:6.7207vh; */
+}
+.wash-1-1-left {
+  width: 2.22222vw;
+  height: 1.53659vh;
+  float: left;
+  margin-left: 4.16666vw;
+  margin-top: 1.13222vh;
+}
+.wash-1-1-auto {
+  background: #ececec;
+  width: 1px;
+  height: 2.30489vh;
+  float: left;
+  margin-left: 4.64814vw;
+  margin-top: 0.566114vh;
+  
+}
+.wash-1-1-right {
+  width: 3.14814vw;
+  height: 1.53659vh;
+  float: right;
+  margin-right: 4.16666vw;
+  margin-top: 1.13222vh;
+}
