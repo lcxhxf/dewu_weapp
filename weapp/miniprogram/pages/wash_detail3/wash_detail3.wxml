@@ -4,3 +4,86 @@
   </view>
   <view class="wd-1-2">增值服务</view>
 </view>
+<view class="hd">
+    <scroll-view 
+    scroll-x="true"
+    style="width:100%;"
+    class="scroll-view_H">
+      <view 
+      wx:for="{{heroNav}}"
+      wx:key="{{index}}"  
+      data-index="{{index}}"  
+      data-type="{{item.type}}"
+      bindtap="changeHeros"
+      class="scroll-view-item_H {{activeNavIndex == index?'active': ''}}">
+        <text>{{item.text}}</text>
+      </view>
+    </scroll-view>
+  </view>
+<view class="bd">
+  <view class="bd1">
+    <image src="https://cdn.poizon.com/node-common/fb9749a8fcae1b3314a0e69daba82f07.png"></image>
+  </view>
+  <view class="bd2">
+    <view class="bd2-1">
+      <view class="bd2-1-1">
+        <view class="bd2-1-1-1">￥</view>
+        <view class="bd2-1-1-2">159</view>
+        <view class="bd2-1-1-3">/双</view>
+      </view>
+      <view class="bd2-1-2">5770已购</view>
+    </view>
+    <view class="bd2-2">绒面鞋补色</view>
+  </view>
+  <view class="bd3">
+    <view class="bd3-1">效果对比</view>
+    <view class="bd3-2">
+      <image src="https://cdn.poizon.com/node-common/71fc7ea19a5ba309aa82aa92c50412e2.png"></image>
+    </view>
+    <view class="bd3-3">
+      <view class="bd3-3-1">服务前</view>
+      <view class="bd3-3-2">服务后</view>
+    </view>
+    <view class="bd3-4">解决难题</view>
+    <view class="bd3-5">
+      <view class="bd3-5-1">
+        <image src="https://cdn.poizon.com/node-common/20d45e775c5e0925f67327ba139698ce.png"></image>
+        <text>老旧褪色</text>
+      </view>
+      <view class="bd3-5-1">
+        <image src="https://cdn.poizon.com/node-common/05b7f08ea9307d2cd262b160ce11ce42.png"></image>
+        <text>颜色不均</text>
+      </view>
+      <view class="bd3-5-1">
+        <image src="https://cdn.poizon.com/node-common/1ef28e1da9d50d21e761f6054fc5e5ce.png"></image>
+        <text>碰擦磨损</text>
+      </view>
+    </view>
+    <view class="bd3-6"></view>
+  </view>
+  <view class="bd4">
+    <image src="https://cdn.poizon.com/node-common/5594a7335cd09b7b617d8e37ed351322.png"></image>
+  </view>
+  <view class="bd5">
+    <view class="bd5-1">
+      <image src="https://cdn.poizon.com/node-common/c0b2849bbf840b2e85cd88d640b3d9ba.png"></image>
+    </view>
+    <view class="bd5-2">采用球鞋专用高端补色染料、品牌官色号专业调配、进口喷
+涂设备等，确保还原修复球鞋原色同时在色牢度、皮质手感等
+方面均恢复原有质感。
+</view>
+    <view class="bd5-3">
+      <image src="https://cdn.poizon.com/node-common/60204187299c4da674f761ce6b7f2bd6.png"></image>
+    </view>
+    <view class="bd5-4">对绒面、反皮、鹿皮等同类材质球鞋做补色还原处理。
+</view>
+    <view class="bd5-5">
+      <image src="https://cdn.poizon.com/node-common/a5d8bea3129ebfe6a3cfc4c6732d4567.png"></image>
+    </view>
+    <view class="bd5-6">养护后整体无色差，色泽均匀自然,手感舒适柔软。
+</view>
+  </view>
+  <view class="bd6">
+    <image src="https://cdn.poizon.com/node-common/d618b2f17cbd2040b3112af69e148d34.png"></image>
+  </view>
+</view>
