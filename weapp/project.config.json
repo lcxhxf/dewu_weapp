@@ -36,7 +36,17 @@
     "minifyWXSS": true,
     "showES6CompileOption": false
   },
+<<<<<<< HEAD
   "appid": "wxa6a476cfa853249d",
+=======
+
+<<<<<<< HEAD
+  "appid": "wx8d2b4f36c92ae4ee",
+=======
+  "appid": "wxa6a476cfa853249d",
+>>>>>>> f1b31f9cbb7f0c44485c5a4515361606bee6061d
+
+>>>>>>> 0867ae4d8618676c11811f33a6a7d9c2bda5ade1
   "projectname": "dewu",
   "libVersion": "2.14.1",
   "cloudfunctionTemplateRoot": "cloudfunctionTemplate",
