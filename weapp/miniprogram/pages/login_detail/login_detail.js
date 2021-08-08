@@ -1,4 +1,4 @@
-// pages/buy/buy.js
+// miniprogram/pages/login_detail/login_detail.js
 Page({
 
   /**
