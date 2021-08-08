@@ -1,0 +1,21 @@
+.show_info {
+  padding: 70rpx 50rpx;
+  font-family: KaiTi;
+}
+.show_info_date h1{
+  float: right;
+  font-weight: 600;
+  font-size: 28rpx;
+}
+.show_info_title {
+  margin-top: 150rpx;
+  text-align: center;
+}
+.show_info_title h1 {
+  font-weight: 600;
+  font-size: 40rpx;
+}
+.show_info_titles {
+  text-align: left;
+
+}

@@ -1,1 +1,77 @@
-/* miniprogram/pages/disting/disting.wxss */
+page {
+  background-color: #fff;
+}
+.dist1 {
+  text-align: center;
+}
+.dist1 image {
+  width: 530rpx;
+  height: 70rpx;
+  margin-top: 50rpx;
+}
+.dist2 {
+  width: 100%;
+  height: 95rpx;
+  font-size: 15px;
+  color: #7f7f8e;
+  display: flex;
+  justify-content: center;
+  align-items:center;
+}
+.dist2-1,.dist2-3 {
+  height: 0rpx;
+  width: 50rpx;
+  border: 0.5px solid #7f7f8e;
+}
+.dist2-2 {
+  margin-left: 20rpx;
+  margin-right: 20rpx;
+}
+.dist3 image{
+  width: 100%;
+  height: 384rpx;
+}
+.dist4-1 {
+  width: 100%;
+  height: 170rpx; 
+  background-color: #42495d;
+  margin-top: -13rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.dist-4-1-1 {
+  width: 90%;
+  height: 100rpx;
+  background: #ffffff;
+}
+.dist-4-1-1 input {
+  height: 100rpx;
+}
+.dist5-1 {
+  width: 100%;
+  height: 340rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.dist5-1-1 {
+  width: 50%;
+  height: 160rpx;
+  background: #ffffff;
+  text-align: center;
+}
+.dist5-1-1-bt {
+  background: #00c2c3;
+  border-radius: 0;
+}
+.dist5-1-1-bt text {
+  font-family: 华文宋体;
+  font-size: 20px;
+  color: #ffffff;
+}
+.dist-5-1-1-text {
+  color: #c0c0cd;
+  margin-top: 18rpx;
+
+}

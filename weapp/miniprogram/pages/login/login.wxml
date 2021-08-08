@@ -1,0 +1,32 @@
+<view class="login__hd">
+  <view class="login-1-1">
+    <view bindtap="return">
+      <image src="https://cdn.poizon.com/node-common/YmFja0AzeDE1OTM3NTU3NDQ4NDk=.png" class="login-1-1-left"></image>
+    </view>
+    <view class="login-1-1-auto"></view>
+    <view bindtap="more">
+      <image src="https://cdn.poizon.com/node-common/aG9tZUAzeDE1OTM3NTU3MDU5MjM=.png" class="login-1-1-right"></image>
+    </view>
+  </view>
+  <view class="login__hd_title">
+    <h1>登录</h1>
+  </view>
+</view>
+<view class="login__bd">
+  <view class="login__bd_pic">
+    <image class="image-1"></image>
+    <image class="image-2"></image>
+  </view>
+  <view class="login__bd_main">
+    <button class="user-btn1 " openType="getUserInfo"  bindgetuserinfo="getUserInfo" >微信登录</button>
+    <button  class="user-btn3 {{isAgreed?'active1': ''}}" bindtap='showtips' >微信登录</button>
+    <button class="user-btn2">手机号登录/注册</button>
+  </view>
+  <view class="login__bd_info">
+    <view class="check_btn {{activeIndex == 1?'active2': ''}}" bindtap="agree"></view>
+    <view class="check_txt">
+      <h1>已阅读并同意<h2 bindtap="show_detail">用户协议、隐私政策、买家须知</h2>
+      </h1>
+    </view>
+  </view>
+</view>

@@ -86,7 +86,7 @@
     </view>
   </view>
 </view>
-<view class="wash-5">
+<view class="wash-5" bindtap="toRecord">
   <view class="wash-5-1">
     <view class="wash-5-1-1">累计清洗</view>
     <view class="wash-5-1-2">444,934</view>
