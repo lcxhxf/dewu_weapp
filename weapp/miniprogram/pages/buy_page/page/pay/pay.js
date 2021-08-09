@@ -1,18 +1,27 @@
-// pages/produce/produce.js
+const db = wx.cloud.database()
+const dewuCollection = db.collection('dewu')
+
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-
+    goods: []
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
-  onLoad: function (options) {
-
+  async onLoad(e) {
+    console.log(e);
+    await dewuCollection
+      .get()
+      .then(res => {
+        this.setData({
+          goods: res.data
+        })
+      })
   },
 
   /**

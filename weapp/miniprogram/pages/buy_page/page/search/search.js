@@ -1,6 +1,6 @@
 // miniprogram/pages/search/search.js
 const db = wx.cloud.database()
-const posterCollection = db.collection('poster')
+const dewuCollection = db.collection('dewu')
 Page({
 
   /**
@@ -18,7 +18,7 @@ Page({
         title: '抱歉，没有找到相关商品，为您推荐以下热门商品',
       })
     }
-    posterCollection
+    dewuCollection
       .where({
         title: db.RegExp({
           regexp: keyword,
