@@ -11,8 +11,57 @@
       </view>
     </view>
   </van-sticky>
+  <van-popup show="{{ show }}" position="right" custom-style="height:100%;width:80%" bind:close="onClose">
+    <scroll-view class="pop" scroll-y>
+      <van-collapse value="{{ activeNames }}" bind:change="onChange" bind:open="onOpen1" bind:close="onClose1">
+        <van-collapse-item title="适用人群" value="全部" name="1">
+        </van-collapse-item>
+        <van-grid column-num="3" gutter="{{ 10 }}">
+          <van-grid-item class="{{activeIndex1==index?'active1':''}}" wx:key="index"
+          data-flag="{{flag1}}" data-index="{{index}}" bindtap="pick1" use-slot wx:for="{{ human }}">
+            {{item.kind}}
+          </van-grid-item>
+        </van-grid>
+      </van-collapse>
+      <view style="height:50rpx;"></view>
+      <van-collapse value="{{ activeNames }}" bind:change="onChange" bind:open="onOpen2" bind:close="onClose2">
+        <van-collapse-item title="商品尺码" value="全部" name="2">
+        </van-collapse-item>
+        <van-grid column-num="3" gutter="{{ 10 }}">
+          <van-grid-item class="{{activeIndex2==index?'active1':''}}" wx:key="index"
+          data-flag="{{flag2}}" data-index="{{index}}" bindtap="pick2" use-slot wx:for="{{ size }}">
+            {{item.size}}
+          </van-grid-item>
+        </van-grid>
+      </van-collapse>
+      <view style="height:50rpx;"></view>
+      <view class="priceRoute">
+        <view class="title">价格区间(元)</view>
+        <view class="route">
+          <input type="number" bindinput="lower" placeholder="输入最低价" />
+          <view class="line"></view>
+          <input type="number" bindinput="higher" placeholder="输入最高价" />
+        </view>
+      </view>
+      <view style="height:50rpx;"></view>
+      <van-collapse value="{{ activeNames }}" bind:change="onChange" bind:open="onOpen3" bind:close="onClose3">
+        <van-collapse-item title="热门品牌" value="全部" name="3">
+        </van-collapse-item>
+        <van-grid column-num="3" gutter="{{ 10 }}">
+          <van-grid-item class="{{activeIndex3==index?'active1':''}}" wx:key="index"
+          data-flag="{{flag3}}" data-index="{{index}}" bindtap="pick3" use-slot wx:for="{{ brand }}">
+            {{item.kind}}
+          </van-grid-item>
+        </van-grid>
+      </van-collapse>
+      <van-goods-action>
+        <button bindtap="replace" class="btn1" style="line-height:74rpx;width:150rpx;font-size:30rpx;color:#515151;font-weight:550;border-radius:0;height:74rpx;">重置</button>
+        <button bindtap="ischeck" style="line-height:74rpx;width:300rpx;height:74rpx;background-color:#00cbcc;color:#fff;font-size:30rpx;font-weight:550;border-radius:0;">确定</button>
+      </van-goods-action>
+    </scroll-view>
+  </van-popup>
   <van-grid class="van-grid-bd" column-num="2">
-    <van-grid-item use-slot wx:for="{{goods}}" data-item="{{item}}" wx:key="index" data-id="{{item._id}}"
+    <van-grid-item use-slot wx:for="{{goods}}" wx:for-item="item" data-item="{{item}}" wx:key="index" data-id="{{item._id}}"
       bindtap="gotoDetail">
       <view class="item-img">
         <image style="width:300rpx;height:192rpx;" src="{{item.pic}}"></image>

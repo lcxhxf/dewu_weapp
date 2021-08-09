@@ -21,7 +21,13 @@ Page({
     current2: 0,
     img: []
   },
-  preview(e) {
+  gotoPay(e) {
+    console.log(e);
+    wx.navigateTo({
+      url: '/pages/buy_page/page/pay/pay',
+    })
+  },
+  previewImage(e) {
     console.log(e);
   },
   pickSize(e) {

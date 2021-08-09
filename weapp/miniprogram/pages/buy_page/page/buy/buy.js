@@ -14,7 +14,7 @@ Page({
     shoes: []
   },
   gotoDetail(e) {
-    console.log(e);
+    // console.log(e);
     wx.navigateTo({
       url: '/pages/buy_page/page/detail/detail?id='+e.currentTarget.dataset.id,
     })
@@ -97,8 +97,34 @@ Page({
   /**
    * 页面相关事件处理函数--监听用户下拉动作
    */
-  onPullDownRefresh: function () {
-
+  async onPullDownRefresh() {
+    // await dewuCollection
+    // .where({
+    //   amway: db.command.eq('TRUE')
+    // })
+    // .field({
+    //   _id:true,
+    //   pic:true,
+    //   title:true,
+    //   buyer:true,
+    //   price:true
+    // })  
+    // .get()
+    // .then(res => {
+    //   this.setData({
+    //     produces: res.data,
+    //   })
+    //   wx.hideNavigationBarLoading();
+    // })
+    wx.showNavigationBarLoading()
+    wx.showLoading({
+      title: '',
+    })
+    setTimeout(res => {
+      wx.hideLoading(),
+      wx.stopPullDownRefresh(),
+      wx.hideNavigationBarLoading();
+    },1000)
   },
 
   /**

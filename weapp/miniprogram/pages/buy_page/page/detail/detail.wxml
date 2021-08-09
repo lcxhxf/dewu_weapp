@@ -48,8 +48,8 @@
   <van-popup show="{{ show1 }}" closeable position="bottom" custom-style="height: 75%" bind:close="onClose1">
     <view class="detail_size-hd">
       <view class="detail_size-hd-img">
-        <image bindtap="preview" style="width:160rpx;height:160rpx;" mode="aspectFit"
-          src="https://cdn.poizon.com/source-img/origin-img/20201205/b9b4c1ae79704617ae76125f76ad09b7.jpg?x-oss-process=image/format,webp">
+        <image bindtap="previewImage" style="width:160rpx;height:160rpx;" mode="aspectFit"
+          src="{{img.pic}}">
         </image>
       </view>
       <view class="detail_size-hd-price" wx:for="{{size}}" wx:key="index" data-index="{{index}}">
@@ -76,7 +76,7 @@
       </van-grid>
     </view>
     <view class="detail_size-fd" wx:for="{{size}}" wx:key="index" data-flag="{{flag}}" data-index="{{index}}">
-      <button wx:if="{{activeSizeIndex==index}}"
+      <button wx:if="{{activeSizeIndex==index}}" bindtap="gotoPay"
         style="width:700rpx;background-color:#00cbcc;color:#fff;font-size:30rpx;font-weight:550;border-radius:0;">￥{{item.price}}|约六天到</button>
     </view>
   </van-popup>
@@ -159,7 +159,7 @@
   </view>
   <view class="aaa" style="width:100%;height:180rpx;"></view>
   <van-goods-action>
-    <button
+    <button bindtap="showPopup1"
       style="width:700rpx;background-color:#00cbcc;color:#fff;font-size:30rpx;font-weight:550;border-radius:0;">立即购买</button>
   </van-goods-action>
 </view>
