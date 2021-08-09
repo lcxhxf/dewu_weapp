@@ -82,16 +82,6 @@ Page({
   //     url: '/pages/buy/buy',
   //   })
   // },
-  toDetail() {
-    wx.navigateTo({
-      url: '/pages/wash_detail1/wash_detail1',
-    })
-  },
-  toRecord() {
-    wx.navigateTo({
-      url: '/pages/wash_detail2/wash_detail2',
-    })
-  },
   return() {
     // wx.navigateTo({
     //   url: '/miniprogram/pages/buy/buy.wxml',
@@ -113,6 +103,22 @@ Page({
       })
     }
   },
+  toDetail() {
+    wx.navigateTo({
+      url: '/pages/wash_detail1/wash_detail1',
+    })
+  },
+  toRecord() {
+    wx.navigateTo({
+      url: '/pages/wash_detail2/wash_detail2',
+    })
+  },
+  toAdd() {
+    wx.navigateTo({
+      url: '/pages/wash_detail3/wash_detail3'
+    })
+  },
+
   /**
    * 生命周期函数--监听页面加载
    */
