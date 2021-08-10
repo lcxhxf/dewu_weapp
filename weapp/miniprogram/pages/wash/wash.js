@@ -76,6 +76,7 @@ Page({
     pic,
     pic2,
     moreData:false,
+    headshow:0
   },
   // return(){
   //   wx.navigateTo({
@@ -102,6 +103,17 @@ Page({
         moreData:false
       })
     }
+  },
+  onPageScroll: function (e) {
+    let opacity = 0
+    if (e.scrollTop <= 10) {
+      opacity = 0
+    } else {
+      opacity = 1
+    }
+    this.setData({
+      headshow: opacity
+    })
   },
   toDetail() {
     wx.navigateTo({

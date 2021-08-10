@@ -1,9 +1,11 @@
-<view class="wd-1">
+<van-sticky>
+  <view class="wd-1">
   <view class="wd-1-1" bindtap="return">
     <image src="https://cdn.poizon.com/node-common/YmFja0AzeDE1OTM3NTU3NDQ4NDk=.png"></image>
   </view>
   <view class="wd-1-2">购买记录</view>
 </view>
+</van-sticky>
 <view class="wd-2">
   <view class="xunhuang"  wx:for="{{record}}">
     <view class="wd-2-1" >

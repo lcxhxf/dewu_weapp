@@ -6,10 +6,14 @@ page {
   background:#f6f8f9;
 }
 .wash-1 {
-  height: 11.1200vh;
+  height: 10.1200vh;
+  width: 100%;
   position: relative;
+  display: flex;
+  background-color: #fff;
 }
 .wash-1-1 {
+  z-index: 2;
   border: 1px solid #ececec;
   width: 23.0555vw;
   height: 3.67974vh;
@@ -18,6 +22,14 @@ page {
   border-radius: 30px;
   margin-top: 5.62070vh;
   /* padding-top:6.7207vh; */
+}
+.wash-1-2 {
+  position: absolute;
+  margin-top: -4vh;
+  width: 100%;
+  text-align: center;
+  z-index: 12;
+  color: #000000;
 }
 .wash-1-1-left {
   width: 2.22222vw;

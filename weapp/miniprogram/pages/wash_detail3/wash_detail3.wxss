@@ -1,3 +1,31 @@
+.add_btn{
+  width: 100%;
+  position: fixed;
+  bottom: 0rpx;
+  background-color: #fff;
+}
+.add_btn1 {
+  width: 100%;
+  display: flex;
+  font-size: 10px;
+  margin-left: 10px;
+  text-align: center;
+}
+.add_btn1-1 image {
+  width: 30px;
+  height: 30px;
+  margin-left: 6px;
+  margin-top: 6px;
+}
+.add_btn1-2 {
+  margin-left: 10px;
+}
+.btn{
+  margin-top: 12rpx;
+  width: 450rpx;
+  background: #14a1fd;
+  color: #fff;
+}
 .wd-1 {
   display: flex;
   height: 11vh;
