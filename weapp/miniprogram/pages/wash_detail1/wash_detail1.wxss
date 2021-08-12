@@ -1,3 +1,31 @@
+.add_btn{
+  width: 100%;
+  position: fixed;
+  bottom: 0rpx;
+  background-color: #fff;
+}
+.add_btn1 {
+  width: 100%;
+  display: flex;
+  font-size: 10px;
+  margin-left: 10px;
+  text-align: center;
+}
+.add_btn1-1 image {
+  width: 30px;
+  height: 30px;
+  margin-left: 6px;
+  margin-top: 6px;
+}
+.add_btn1-2 {
+  margin-left: 10px;
+}
+.btn{
+  margin-top: 12rpx;
+  width: 450rpx;
+  background: #14a1fd;
+  color: #fff;
+}
 page {
   height: 100vh;
   width: 100vw;
@@ -31,7 +59,20 @@ page {
   margin-left: 3.33333vw;
   border-radius: 30px;
   margin-top: 5.62070vh;
+  z-index: 5;
   /* padding-top:6.7207vh; */
+}
+.wd-1-2 {
+  height: 11.1200vh;
+  width: 100%;
+  background-color: #ffffff;
+  position: absolute;
+  text-align: center;
+  top: 0;
+  left: 0;
+}
+.wd-1-2 a {
+  line-height: 128px;
 }
 .wash-1-1-left {
   width: 2.22222vw;

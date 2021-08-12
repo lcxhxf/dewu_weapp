@@ -36,6 +36,7 @@
     "minifyWXSS": true,
     "showES6CompileOption": false
   },
+
   "appid": "wxa6a476cfa853249d",
   "projectname": "dewu",
   "libVersion": "2.14.1",

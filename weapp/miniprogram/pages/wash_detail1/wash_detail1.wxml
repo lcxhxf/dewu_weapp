@@ -1,12 +1,6 @@
-<view class="wd-1">
-  <swiper class="swiper" indicator-color="#d5e6f8" indicator-active-color="#409fff" indicator-dots="true" autoplay="false" interval="5000" duration="1000">  
-        <block wx:for="{{movies}}" wx:key="index">  
-          <swiper-item>  
-            <image class="wd-1-img" src="{{item.url}}" class="slide-image" mode="aspectFill"/>  
-          </swiper-item>  
-        </block>  
-  </swiper> 
-  <view class="wd-1-1">
+<van-sticky >
+  <view class="wd-1-2"  style="opacity:{{headshow}};"><a>球鞋深层清洗服务</a></view>
+    <view class="wd-1-1">
   <view class="wash-1-1" >
     <view bindtap="return"><image src="../../images/wash_icon/16-18-36.png" class="wash-1-1-left"></image></view>
     <view class="wash-1-1-auto"></view>
@@ -27,6 +21,16 @@
       </view>
     </view>
 </view>
+  
+  </van-sticky>
+<view class="wd-1">
+  <swiper class="swiper" indicator-color="#d5e6f8" indicator-active-color="#409fff" indicator-dots="true" autoplay="false" interval="5000" duration="1000">  
+        <block wx:for="{{movies}}" wx:key="index">  
+          <swiper-item>  
+            <image class="wd-1-img" src="{{item.url}}" class="slide-image" mode="aspectFill"/>  
+          </swiper-item>  
+        </block>  
+  </swiper> 
 </view>
 <view class="wd-2">
   <view class="wd-2-1">
@@ -226,4 +230,18 @@
 </view>
     </view>
   </view>
+</view>
+<view class='add_btn'>
+  <view class="add_btn1">
+    <view class="add_btn1-1">
+      <image src="https://cdn.poizon.com/node-common/Y2xlYXJfaWNvbl9jYWxsQDN4MTU5Mzc1NjM3MzU2Ng==.png"></image>
+      <view>客服</view>
+    </view>
+    <view class="add_btn1-2">
+      <button class='btn' style="width: 600rpx;">
+        购买
+    </button>
+    </view>
+</view>
+   
 </view>

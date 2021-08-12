@@ -4,3 +4,44 @@
 .weui-search-bar__box {
   background-color: #f2f0f0;
 }
+.hotContainer .title {
+  margin-left: 30rpx;
+  font-size: 28rpx;
+  height: 80rpx;
+  line-height: 80rpx;
+}
+.hotList {
+  display: flex;
+  flex-wrap: wrap;
+}
+.hotItem {
+  width: 20%;
+  height: 80rpx;
+  line-height: 80rpx;
+  font-size: 26rpx;
+  margin: 0rpx 30rpx;
+}
+.historyContainer .title {
+  position: relative;
+  margin-top: 30rpx;
+  margin-left: 30rpx;
+  font-size: 28rpx;
+  height: 80rpx;
+  line-height: 80rpx;
+}
+.historyContainer .title .delete {
+  position: absolute;
+  right: 30rpx;
+  top: 20rpx;
+}
+.historyList {
+  display: flex;
+  flex-wrap: wrap;
+}
+.historyItem {
+  width: 20%;
+  height: 80rpx;
+  line-height: 80rpx;
+  font-size: 26rpx;
+  margin: 0rpx 30rpx;
+}

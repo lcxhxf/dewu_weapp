@@ -76,22 +76,13 @@ Page({
     pic,
     pic2,
     moreData:false,
+    headshow:0
   },
   // return(){
   //   wx.navigateTo({
   //     url: '/pages/buy/buy',
   //   })
   // },
-  toDetail() {
-    wx.navigateTo({
-      url: '/pages/wash_detail1/wash_detail1',
-    })
-  },
-  toRecord() {
-    wx.navigateTo({
-      url: '/pages/wash_detail2/wash_detail2',
-    })
-  },
   return() {
     // wx.navigateTo({
     //   url: '/miniprogram/pages/buy/buy.wxml',
@@ -113,6 +104,33 @@ Page({
       })
     }
   },
+  onPageScroll: function (e) {
+    let opacity = 0
+    if (e.scrollTop <= 10) {
+      opacity = 0
+    } else {
+      opacity = 1
+    }
+    this.setData({
+      headshow: opacity
+    })
+  },
+  toDetail() {
+    wx.navigateTo({
+      url: '/pages/wash_detail1/wash_detail1',
+    })
+  },
+  toRecord() {
+    wx.navigateTo({
+      url: '/pages/wash_detail2/wash_detail2',
+    })
+  },
+  toAdd() {
+    wx.navigateTo({
+      url: '/pages/wash_detail3/wash_detail3'
+    })
+  },
+
   /**
    * 生命周期函数--监听页面加载
    */

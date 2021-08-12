@@ -38,6 +38,7 @@ Page({
       dataList
     },
     moreData:false,
+    headshow:0
   },
   return(e) {
     // wx.navigateTo({
@@ -59,6 +60,17 @@ Page({
         moreData:false
       })
     }
+  },
+  onPageScroll: function (e) {
+    let opacity = 0
+    if (e.scrollTop <= 10) {
+      opacity = 0
+    } else {
+      opacity = 1
+    }
+    this.setData({
+      headshow: opacity
+    })
   },
   /**
    * 生命周期函数--监听页面加载
