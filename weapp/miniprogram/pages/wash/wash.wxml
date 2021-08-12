@@ -1,4 +1,5 @@
-<view class="wash-1">
+<van-sticky>
+  <view class="wash-1">
   <view class="wash-1-1" >
   <view bindtap="return"><image src="../../images/wash_icon/16-18-36.png" class="wash-1-1-left"></image></view>
   <view class="wash-1-1-auto"></view>
@@ -19,7 +20,8 @@
       </view>
     </view>
 </view>
-
+<view class="wash-1-2" style="opacity:{{headshow}};">洗护焕然</view>
+</van-sticky>
 <view class="wash-2">
 <image src="../../images/wash_icon/16-19-09.png" class="wash-2-img"></image>
   <!-- <image src="../../images/wash_icon/16-19-09.png"/> -->
@@ -107,7 +109,7 @@
     <!-- <view class="wash-5-2-3">已购买</view> -->
   </view>
 </view>
-<view class="wash-6">
+<view class="wash-6" bindtap="toAdd">
   <view class="wash-6-1">
     <view class="wash-6-1-top">
       <view class="wash-6-1-top-left">增值服务</view>
