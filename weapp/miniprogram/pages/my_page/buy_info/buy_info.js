@@ -1,19 +1,33 @@
 // miniprogram/pages/buy_info/buy_info.js
+const db = wx.cloud.database()
+const dewuCollection = db.collection('dewu')
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-
+    produces: []
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
-  onLoad: function (options) {
+  async onLoad() {
     wx.setNavigationBarTitle({
       title: '我的购买'
+    })
+    const {data} = await dewuCollection
+    .field({
+      _id:true,
+      pic:true,
+      title:true,
+      price:true
+    })  
+    .get()
+    console.log(data);
+    this.setData({
+      produces: data
     })
   },
 
