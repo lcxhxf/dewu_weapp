@@ -1,13 +1,35 @@
 <view class="page">
   <view class="search">
-    <van-search 
-    value="{{value}}" 
-    placeholder="输入商品名称、货号"
-    bind:search="onSearch"/>
-    <block wx:if="results.length > 0">
-      <van-cell wx:for="{{results}}"
-        wx:if="_id"
-        title="{{item.title}}"></van-cell>
+    <van-search value="{{value}}" bind:clear="onClear" placeholder="输入商品名称、货号" bind:search="onSearch"
+      bind:change="onChange" />
+
+    <block wx:if="{{showHotList==true}}">
+      <view class="hotContainer">
+        <view class="title">热门搜索</view>
+        <view class="hotList">
+          <view class="hotItem" wx:for="{{hotList}}" wx:key="index">
+            <text class="order">{{item.text}}</text>
+          </view>
+        </view>
+      </view>
     </block>
+
+    <block wx:if="{{showHistory == true && historyList.length > 0}}">
+      <view class="historyContainer">
+        <view class="title">历史搜索<image class="delete" bindtap="deleteSearchHistory" style="width:34rpx;height:34rpx;" src="https://cdn.poizon.com/node-common/c2VhcmNoX3J1YmJpc2g=.png">
+        </image></view>
+        <view class="historyList">
+          <view class="historyItem" wx:for="{{historyList}}" wx:key="index" data-index="{{index}}" bindtap="historySearch">
+            <text class="order">{{item}}</text>
+          </view>
+        </view>
+      </view>
+    </block>
+
+    <block wx:if="results.length > 0">
+      <van-cell wx:for="{{results}}" wx:key="index" data-id="{{item._id}}" title="{{item.title}}" bindtap="gotoDetail">
+      </van-cell>
+    </block>
+
   </view>
 </view>
