@@ -1,1 +1,16 @@
-/* miniprogram/pages/my_page/account/account.wxss */
+.account_hd {
+  font-size: 100rpx;
+  padding: 70rpx 315rpx;
+  color: #00BABA;
+  background-color: white;
+}
+.account_hd::first-letter {
+  font-size: 50rpx;
+}
+.account_bd {
+  margin-top: 20rpx;
+}
+.van-icon {
+  margin-top: -10rpx;
+  padding-right: 20rpx;
+}
