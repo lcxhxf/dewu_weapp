@@ -19,16 +19,16 @@ Page({
     //轮播图当前的下标
     current: 0,
     current2: 0,
-    img: []
+    img: [],
+    id: ''
   },
   gotoPay(e) {
-    console.log(e);
     wx.navigateTo({
-      url: '/pages/buy_page/page/pay/pay',
+      url: '/pages/buy_page/page/pay/pay?id='+this.data.id,
     })
   },
   previewImage(e) {
-    console.log(e);
+    // console.log(e);
   },
   pickSize(e) {
     let flag = e.currentTarget.dataset.flag
@@ -89,9 +89,9 @@ Page({
     })
   },
   
-  async onLoad(options) {
-    console.log(options);
-    let id = options.id
+  async onLoad(e) {
+    console.log(e);
+    let id = e.id
     console.log(id);
     wx.cloud.database().collection('dewu')
     .doc(id)
@@ -99,9 +99,12 @@ Page({
     .then(res => {
       console.log(res);
       this.setData({
-       img :res.data
+       img :res.data,
+       id: id
       })
+      console.log(this.data.id);
     })
+
     // let {data: info} = await postsCollection
     //   .doc(_id)
     //   .get()

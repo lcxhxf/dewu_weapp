@@ -1,1 +1,20 @@
-<view>check it</view>
+<van-cell title="收货人: 刘天瞳" icon="location-o" value="187****1206" size="large" label="江西省南昌市青山湖区玉屏西大街665号" is-link />
+
+<van-card price="{{goods.price}}" desc="L 数量x1" title="{{goods.title}}" thumb="{{goods.pic}}" />
+<van-cell-group>
+  <van-cell title="顺丰速运" value="￥18" />
+  <van-cell value-class="cell2" title="优惠卷" value="-￥15" border="{{ false }}" is-link />
+</van-cell-group>
+<view class="check_txt">
+  <h1>1、若卖家未在36小时内发货导致交易关闭且平台未为您匹配到新订单，您将获得28.00元现金及总计人民币170元的满减优惠券补偿。</h1>
+  <h1>2、每件交易商品均由平台针对实物进行鉴别，鉴于商品价格波动性,同时每个款式每个尺码的商品出售时仅有—件等情况,故不支持退还差价。</h1>
+  <h1>3、企业商家ID:B21031855774654，因商品拆封鉴别，不支持七天无理由退货。</h1>
+  <h1>提交订单即表示同意买家须知<h2 bindtap="show_detail">买家须知</h2>
+  </h1>
+</view>
+<view class="pay_foot">
+  <view class="payMoney">
+    <h1>实付款：￥<h2>{{newPrice}}</h2></h1>
+    <van-button bind:click="pay" class="b1" type="primary" size="small" color="#01B8B9" square="true" custom-style="width: 200rpx">提交订单</van-button>
+  </view>
+</view>

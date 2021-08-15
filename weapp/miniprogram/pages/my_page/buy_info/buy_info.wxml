@@ -16,9 +16,9 @@
   </van-tab>
   <van-tab title="全部订单" name="a">
     <view class="buy__info page4">
-      <view class="buy__info_goods">
+      <view class="buy__info_goods" wx:for-item="{{pay}}" wx:key="index">
         <view class="buy__info_goods_hd">交易成功</view>
-        <van-card wx:for="{{produces}}" data-item="{{item}}" wx:key="index" price="{{item.price}}" desc="L 数量x1" title="{{item.title}}" thumb="{{item.pic}}" />
+        <van-card  price="{{pay.price}}" desc="L 数量x1" title="{{pay.title}}" thumb="{{pay.pic}}" />
       </view>
     </view>
   </van-tab>

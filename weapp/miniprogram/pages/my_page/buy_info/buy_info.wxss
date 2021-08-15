@@ -1,7 +1,7 @@
 .buy__info {
   width: 100%;
   background-color: white;
-  height: 93.5vh;
+  height: 100%;
   margin-top: 10rpx;
 }
 .buy__info p {
@@ -12,6 +12,8 @@
 }
 .buy__info_goods {
   padding-left: 50rpx;
+  padding-bottom: 30rpx;
+  border-bottom: 20rpx solid #F4F3F8;
 }
 .buy__info_goods_hd {
   height: 100rpx;

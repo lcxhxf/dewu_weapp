@@ -76,7 +76,7 @@
       </van-grid>
     </view>
     <view class="detail_size-fd" wx:for="{{size}}" wx:key="index" data-flag="{{flag}}" data-index="{{index}}">
-      <button wx:if="{{activeSizeIndex==index}}" bindtap="gotoPay"
+      <button wx:if="{{activeSizeIndex==index}}" bindtap="gotoPay"  data-id="{{img.id}}"
         style="width:700rpx;background-color:#00cbcc;color:#fff;font-size:30rpx;font-weight:550;border-radius:0;">￥{{item.price}}|约六天到</button>
     </view>
   </van-popup>

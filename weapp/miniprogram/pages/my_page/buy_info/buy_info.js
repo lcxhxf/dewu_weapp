@@ -7,28 +7,28 @@ Page({
    * 页面的初始数据
    */
   data: {
-    produces: []
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
-  async onLoad() {
+  onLoad() {
     wx.setNavigationBarTitle({
       title: '我的购买'
     })
-    const {data} = await dewuCollection
-    .field({
-      _id:true,
-      pic:true,
-      title:true,
-      price:true
-    })  
-    .get()
-    console.log(data);
-    this.setData({
-      produces: data
-    })
+    // const {data} = await dewuCollection
+    // .field({
+    //   _id:true,
+    //   pic:true,
+    //   title:true,
+    //   price:true
+    // })  
+    // .get()
+    // console.log(data);
+    // this.setData({
+    //   produces: data
+    // })
+
   },
 
   /**
@@ -41,8 +41,19 @@ Page({
   /**
    * 生命周期函数--监听页面显示
    */
+  // 每次打开这个页面都会更新
   onShow: function () {
-
+    wx.getStorage({
+      key: 'information',
+      success: res => {
+        console.log(res.data)
+        this.setData({
+          pay: res.data
+        })
+        console.log(this.data);
+      }
+    })
+    console.log(this.data);
   },
 
   /**

@@ -14,7 +14,7 @@ Page({
     shoes: []
   },
   gotoDetail(e) {
-    // console.log(e);
+    console.log(e);
     wx.navigateTo({
       url: '/pages/buy_page/page/detail/detail?id='+e.currentTarget.dataset.id,
     })
