@@ -1,2 +1,63 @@
-<!--miniprogram/pages/my_page/serviceCenter/serviceCenter.wxml-->
-<text>miniprogram/pages/my_page/serviceCenter/serviceCenter.wxml</text>
+<van-tabs color='black' sticky>
+  <van-tab title="购买问题">
+    <view class="card">
+      <van-collapse value="{{ activeNames }}" bind:change="onChange">
+        <van-collapse-item title="订单问题" name="1">
+          <view class="coll-item">
+            <h1>付款后如何取消订单</h1>
+            <h1>差价问题</h1>
+          </view>
+          <view class="coll-item">
+            <h1>修改订单地址/电话</h1>
+            <h1>如何联系卖家</h1>
+          </view>
+        </van-collapse-item>
+        <van-collapse-item title="物流问题" name="2">
+          <view class="coll-item">
+            <h1>什么时候发货</h1>
+            <h1>误点"确认收货"怎么办</h1>
+          </view>
+          <view class="coll-item">
+            <h1>物流信息不更新</h1>
+            <h1>没收到货为何显示被签收</h1>
+          </view>
+        </van-collapse-item>
+        <van-collapse-item title="售后问题" name="3">
+          <view class="coll-item">
+            <h1>尺码不合适可以退货吗</h1>
+            <h1>退款多久到账</h1>
+          </view>
+          <view class="coll-item">
+            <h1>收到的商品有瑕疵</h1>
+            <h1>退货地址如何查看</h1>
+          </view>
+        </van-collapse-item>
+        <van-collapse-item title="支付问题" name="4">
+          <view class="coll-item">
+            <h1>订单重复支付</h1>
+            <h1>付款后显示未付款</h1>
+          </view>
+          <view class="coll-item">
+            <h1>多久未支付订单会被取消</h1>
+            <h1>如何充值得币</h1>
+          </view>
+        </van-collapse-item>
+        <van-collapse-item title="账户问题" name="5">
+          <view class="coll-item">
+            <h1>原手机号用不了怎么办</h1>
+            <h1>账户余额如何提现</h1>
+          </view>
+          <view class="coll-item">
+            <h1>如何删除订单</h1>
+            <h1>注销账号</h1>
+          </view>
+        </van-collapse-item>
+      </van-collapse>
+    </view>
+  </van-tab>
+  <van-tab title="出售问题">
+    <view class="card">
+      <h1>暂无</h1>
+    </view>
+  </van-tab>
+</van-tabs>

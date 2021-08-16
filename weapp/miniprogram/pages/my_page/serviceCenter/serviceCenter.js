@@ -5,9 +5,13 @@ Page({
    * 页面的初始数据
    */
   data: {
-
+    activeNames: ['1'],
   },
-
+  onChange(event) {
+    this.setData({
+      activeNames: event.detail,
+    });
+  },
   /**
    * 生命周期函数--监听页面加载
    */

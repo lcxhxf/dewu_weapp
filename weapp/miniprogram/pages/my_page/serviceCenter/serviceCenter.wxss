@@ -1,1 +1,9 @@
-/* miniprogram/pages/my_page/serviceCenter/serviceCenter.wxss */
+.coll-item {
+  width: 50%;
+  display: inline-block;
+}
+.coll-item h1 {
+  float: left;
+  width: 100%;
+  line-height: 60rpx;
+}
