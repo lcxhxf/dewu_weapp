@@ -1,1 +1,5 @@
-/* miniprogram/pages/my_page/card/card.wxss */
+.card h1{
+  color: #646566;
+  padding-left: 340rpx;
+  line-height: 300rpx;
+}
