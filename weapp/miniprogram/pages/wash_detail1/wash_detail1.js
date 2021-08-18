@@ -72,6 +72,11 @@ Page({
       headshow: opacity
     })
   },
+  buy(e) {
+    wx.navigateTo({
+      url: '/pages/wash_buy/wash_buy',
+    })
+  },
   /**
    * 生命周期函数--监听页面加载
    */

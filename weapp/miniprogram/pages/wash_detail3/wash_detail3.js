@@ -15,7 +15,11 @@ Page({
     wx.switchTab({
       url: '/pages/wash/wash',
     })
-    
+  },
+  buy(e) {
+    wx.navigateTo({
+      url: '/pages/wash_buy/wash_buy',
+    })
   },
   changeHeros(e) {
     console.log(e);

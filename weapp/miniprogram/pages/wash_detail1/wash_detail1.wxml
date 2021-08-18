@@ -231,7 +231,7 @@
     </view>
   </view>
 </view>
-<view class='add_btn'>
+<view class='add_btn' bindtap="buy">
   <view class="add_btn1">
     <view class="add_btn1-1">
       <image src="https://cdn.poizon.com/node-common/Y2xlYXJfaWNvbl9jYWxsQDN4MTU5Mzc1NjM3MzU2Ng==.png"></image>
