@@ -1,0 +1,8 @@
+<view class="account">
+  <view class="account_hd">
+    <h1>￥0</h1>
+  </view>
+  <view class="account_bd">
+    <van-cell size="large" title="明细" icon="https://img0.baidu.com/it/u=2476130622,1222787292&fm=15&fmt=auto&gp=0.jpg" is-link/>
+  </view>
+</view>

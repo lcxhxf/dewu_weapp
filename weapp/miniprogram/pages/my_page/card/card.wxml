@@ -1,0 +1,11 @@
+<van-tabs color='black'>
+  <van-tab title="全部 (0)">
+    <view class="card"><h1>暂无</h1></view>
+  </van-tab>
+  <van-tab title="购物券 (0)">
+    <view class="card"><h1>暂无</h1></view>
+  </van-tab>
+  <van-tab title="随心省 (0)">
+    <view class="card"><h1>暂无</h1></view>
+  </van-tab>
+</van-tabs>

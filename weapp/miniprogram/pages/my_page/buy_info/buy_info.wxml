@@ -1,6 +1,25 @@
-<van-tabs sticky>
-  <van-tab title="待付款"></van-tab>
-  <van-tab title="待发货">内容 2</van-tab>
-  <van-tab title="待收货">内容 3</van-tab>
-  <van-tab title="全部订单">内容 4</van-tab>
+<van-tabs color='black' sticky active="a">
+  <van-tab title="待付款">
+    <view class="buy__info page1">
+      <p>这里还没有内容</p>
+    </view>
+  </van-tab>
+  <van-tab title="待发货">
+    <view class="buy__info page2">
+      <p>这里还没有内容</p>
+    </view>
+  </van-tab>
+  <van-tab title="待收货">
+    <view class="buy__info page3">
+      <p>这里还没有内容</p>
+    </view>
+  </van-tab>
+  <van-tab title="全部订单" name="a">
+    <view class="buy__info page4">
+      <view class="buy__info_goods" wx:for-item="{{pay}}" wx:key="index">
+        <view class="buy__info_goods_hd">交易成功</view>
+        <van-card  price="{{pay.price}}" desc="L 数量x1" title="{{pay.title}}" thumb="{{pay.pic}}" />
+      </view>
+    </view>
+  </van-tab>
 </van-tabs>

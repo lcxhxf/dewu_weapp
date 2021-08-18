@@ -1,1 +1,37 @@
-/* miniprogram/pages/buy_info/buy_info.wxss */
+.buy__info {
+  width: 100%;
+  background-color: white;
+  height: 100%;
+  margin-top: 10rpx;
+}
+.buy__info p {
+  color: #A3A3A4;
+  font-size: 24rpx;
+  padding-left: 300rpx;
+  line-height: 300rpx;
+}
+.buy__info_goods {
+  padding-left: 50rpx;
+  padding-bottom: 30rpx;
+  border-bottom: 20rpx solid #F4F3F8;
+}
+.buy__info_goods_hd {
+  height: 100rpx;
+  line-height: 100rpx;
+  border-bottom: 4rpx solid #F7F7F7;
+  font-weight: 400;
+  font-size: 24rpx;
+}
+.van-card__price {
+  color: black !important;
+}
+.van-card {
+  background-color: white !important;
+  padding: 40rpx 30rpx 0 0 !important;
+}
+.van-card__img {
+  border: 1px solid #F6F6F6 !important;
+}
+.van-card__thumb {
+  padding-right: 10rpx;
+}
