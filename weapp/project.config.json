@@ -37,7 +37,8 @@
     "showES6CompileOption": false
   },
 
-  "appid": "wxa6a476cfa853249d",
+  "appid": "wx8d2b4f36c92ae4ee",
+
   "projectname": "dewu",
   "libVersion": "2.14.1",
   "cloudfunctionTemplateRoot": "cloudfunctionTemplate",
