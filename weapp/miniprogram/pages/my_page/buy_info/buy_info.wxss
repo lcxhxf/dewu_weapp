@@ -3,18 +3,22 @@
   background-color: white;
   height: 100%;
   margin-top: 10rpx;
+  position: relative;
 }
+
 .buy__info p {
   color: #A3A3A4;
   font-size: 24rpx;
   padding-left: 300rpx;
   line-height: 300rpx;
 }
+
 .buy__info_goods {
   padding-left: 50rpx;
   padding-bottom: 30rpx;
   border-bottom: 20rpx solid #F4F3F8;
 }
+
 .buy__info_goods_hd {
   height: 100rpx;
   line-height: 100rpx;
@@ -22,16 +26,71 @@
   font-weight: 400;
   font-size: 24rpx;
 }
+
 .van-card__price {
   color: black !important;
 }
+
 .van-card {
   background-color: white !important;
   padding: 40rpx 30rpx 0 0 !important;
+  position: relative !important;
 }
+
 .van-card__img {
   border: 1px solid #F6F6F6 !important;
 }
+
 .van-card__thumb {
   padding-right: 10rpx;
+}
+
+.icon {
+  left: 0;
+  position: absolute;
+  padding: 10rpx;
+}
+
+.right image {
+  width: 40rpx;
+  height: 40rpx;
+  right: 0;
+  margin-right: 50rpx;
+  position: absolute;
+  margin-top: -45rpx;
+}
+.cart-bottom{
+  position: fixed;
+  height: 90rpx;
+  bottom:0;
+  background: white;
+  left: 0;
+  width: 100%;
+  line-height: 100rpx;
+  font-size: 30rpx;
+}
+.cart-icon{
+  margin:18rpx 20rpx;
+  float: left;
+}
+.cart-sum{
+  width: 300rpx;
+  height: 100%;
+  line-height: 87rpx;
+  float: right;
+  text-align: center;
+}
+.cart-pay{
+  width: 230rpx;
+  height: 100%;
+  background: #00BABA;
+  float: right;
+  display: block;
+  line-height: 87rpx;
+  text-align: center;
+  font-size: 30rpx;
+  color: white;
+}
+.sum_color {
+  color: red;
 }

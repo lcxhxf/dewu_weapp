@@ -8,14 +8,37 @@ Page({
    */
   data: {
     goods: [],
-    newPrice: 0
+    newPrice: 0,
+    id: ''
   },
   show_detail() {
     wx.navigateTo({
       url: '../../../login_detail/login_detail',
     })
   },
-  pay() {
+  pay(e) {
+    let goods = wx.getStorageSync("goods") || []
+    let exist = goods.find((el) => {
+      console.log(e);
+      return el.id == this.data.id
+    })
+    // console.log(e);
+    //如果购物车里面有该商品那么他的数量每次加一
+    if (exist) {
+      exist.value = parseInt(exist.value) + 1
+    } else {
+      goods.push({
+        id: this.data.id,
+        title: e.target.dataset.title,
+        pic: e.target.dataset.pic,
+        price: e.target.dataset.price,
+        value: 1,
+        selected: true
+      })
+    }
+    // console.log(goods);
+    //更新缓存数据
+    wx.setStorageSync("goods", goods)
     wx.showLoading({
       title: '提交订单中',
     })
@@ -27,13 +50,19 @@ Page({
         duration: 1000
       })
     }, 1000)
-    wx.setStorage({
-      key: 'information',
-      data: this.data.goods,
-      success: res => {
-        console.log(res);
-      }
-    })
+    setTimeout(function () {
+      wx.switchTab({
+        url: '../buy/buy',
+      })
+    }, 1500)
+
+    // wx.setStorage({
+    //   key: 'information',
+    //   data: this.data.goods,
+    //   success: res => {
+    //     console.log(res);
+    //   }
+    // })
   },
   /**
    * 生命周期函数--监听页面加载
@@ -46,60 +75,14 @@ Page({
       .doc(id)
       .get()
       .then(res => {
-        console.log(res);
+        // console.log(res.data);
+        let Homedata = res.data
         this.setData({
-          goods: res.data,
-          newPrice: res.data.price + 3
+          data: Homedata,
+          goods: Homedata,
+          newPrice: res.data.price + 3,
+          id: id
         })
       })
   },
-
-  /**
-   * 生命周期函数--监听页面初次渲染完成
-   */
-  onReady: function () {
-
-  },
-
-  /**
-   * 生命周期函数--监听页面显示
-   */
-  onShow: function () {
-
-  },
-
-  /**
-   * 生命周期函数--监听页面隐藏
-   */
-  onHide: function () {
-
-  },
-
-  /**
-   * 生命周期函数--监听页面卸载
-   */
-  onUnload: function () {
-
-  },
-
-  /**
-   * 页面相关事件处理函数--监听用户下拉动作
-   */
-  onPullDownRefresh: function () {
-
-  },
-
-  /**
-   * 页面上拉触底事件的处理函数
-   */
-  onReachBottom: function () {
-
-  },
-
-  /**
-   * 用户点击右上角分享
-   */
-  onShareAppMessage: function () {
-
-  }
 })

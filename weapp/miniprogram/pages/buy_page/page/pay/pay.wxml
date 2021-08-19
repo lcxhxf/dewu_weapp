@@ -15,6 +15,7 @@
 <view class="pay_foot">
   <view class="payMoney">
     <h1>实付款：￥<h2>{{newPrice}}</h2></h1>
-    <van-button bind:click="pay" class="b1" type="primary" size="small" color="#01B8B9" square="true" custom-style="width: 200rpx">提交订单</van-button>
+    <!--  存ID -->
+    <van-button bind:click="pay" data-id="{{goods.id}}" data-title="{{goods.title}}"data-price="{{goods.price}}"data-pic="{{goods.pic}}" class="b1" type="primary" size="small" color="#01B8B9" square="true" custom-style="width: 200rpx">提交订单</van-button>
   </view>
 </view>
