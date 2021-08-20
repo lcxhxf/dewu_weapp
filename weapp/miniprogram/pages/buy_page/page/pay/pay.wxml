@@ -1,4 +1,4 @@
-<van-cell title="收货人: 刘天瞳" icon="location-o" value="187****1206" size="large" label="江西省南昌市青山湖区玉屏西大街665号" is-link />
+<van-cell title="收货人: 刘小瞳" icon="location-o" value="187****1206" size="large" label="北京字节跳动科技有限公司" is-link />
 
 <van-card price="{{goods.price}}" desc="L 数量x1" title="{{goods.title}}" thumb="{{goods.pic}}" />
 <van-cell-group>

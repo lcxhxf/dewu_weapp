@@ -16,6 +16,7 @@
             </block>
         </view>
         <view class="weui-cells weui-cells_after-title my_tools">
+            <!-- 购买栏 -->
             <block wx:for="{{buy}}" wx:key="index">
                 <navigator style="border-bottom: none" url="{{item.url}}">
                     <view class="weui-cell weui-cell_access weui-cell_example ">
@@ -44,6 +45,7 @@
                     </view>
                 </view>
             </block>
+            <!-- 其他栏 -->
             <block wx:for="{{collect}}" wx:key="index">
                 <navigator url="{{item.url}}">
                     <view class="weui-cell weui-cell_access weui-cell_example ">
