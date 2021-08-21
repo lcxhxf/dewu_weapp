@@ -1,7 +1,40 @@
 <van-tabs color='black' sticky active="a">
-  <van-tab title="待付款">
+  <van-tab title="待付款" name="a">
     <view class="buy__info page1">
-      <p>这里还没有内容</p>
+      <view class="buy__info_goods" wx:for="{{goods}}" wx:key="index">
+        <!-- 选择 -->
+        <view class='icon'>
+          <icon wx:if="{{item.selected}}" type="success" color="#00BABA" size="20" bindtap="selectedCart"
+            data-index="{{index}}" />
+          <icon wx:else type="circle" bindtap="selectedCart" size="20" data-index="{{index}}" />
+        </view>
+        <!-- 商品 -->
+        <van-card price="{{item.price}}" desc="数量 x {{item.value}}" title="{{item.title}}" thumb="{{item.pic}}" />
+        <!-- 删除 -->
+        <view class='right'>
+          <image
+            src='https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fpic175.nipic.com%2Ffile%2F20180804%2F24144945_114304501035_2.jpg&refer=http%3A%2F%2Fpic175.nipic.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1631876010&t=e1da2162c6dc0c2bd878cad1a269e24d'
+            bindtap='delete' data-index="{{index}}"></image>
+        </view>
+        <!-- 结算 -->
+        <view class="cart-bottom">
+          <icon wx:if="{{CheckAll}}" class="cart-icon" type="success" color="#00BABA" size="20" bindtap="select"
+            data-index="{{index}}" />
+          <icon wx:else type="circle" class="cart-icon" size="20" bindtap="select" data-index="{{index}}" />
+          <text class='checkAll'>全选</text>
+
+          <view class='cart-pay'>
+            <text class='cart_pay' bindtap="cleanAll" data-index="{{index}}" data-id="{{item.id}}">全部结算</text>
+          </view>
+
+          <view class='cart-sum'>
+            <text class='cart_sum'>
+              <text class='sum_text'>合计：</text>
+              <text class='sum_color'>￥{{total}}元</text>
+            </text>
+          </view>
+        </view>
+      </view>
     </view>
   </van-tab>
   <van-tab title="待发货">
@@ -14,11 +47,11 @@
       <p>这里还没有内容</p>
     </view>
   </van-tab>
-  <van-tab title="全部订单" name="a">
+  <van-tab title="全部订单">
     <view class="buy__info page4">
-      <view class="buy__info_goods" wx:for-item="{{pay}}" wx:key="index">
+      <view class="buy__info_goods" wx:for="{{goods}}" wx:key="index">
         <view class="buy__info_goods_hd">交易成功</view>
-        <van-card  price="{{pay.price}}" desc="L 数量x1" title="{{pay.title}}" thumb="{{pay.pic}}" />
+        <van-card price="{{item.price}}" desc="数量 x {{item.value}}" title="{{item.title}}" thumb="{{item.pic}}" />
       </view>
     </view>
   </van-tab>

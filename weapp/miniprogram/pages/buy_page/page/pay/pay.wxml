@@ -1,4 +1,4 @@
-<van-cell title="收货人: 刘天瞳" icon="location-o" value="187****1206" size="large" label="江西省南昌市青山湖区玉屏西大街665号" is-link />
+<van-cell title="收货人: 刘小瞳" icon="location-o" value="187****1206" size="large" label="北京字节跳动科技有限公司" is-link />
 
 <van-card price="{{goods.price}}" desc="L 数量x1" title="{{goods.title}}" thumb="{{goods.pic}}" />
 <van-cell-group>
@@ -15,6 +15,7 @@
 <view class="pay_foot">
   <view class="payMoney">
     <h1>实付款：￥<h2>{{newPrice}}</h2></h1>
-    <van-button bind:click="pay" class="b1" type="primary" size="small" color="#01B8B9" square="true" custom-style="width: 200rpx">提交订单</van-button>
+    <!--  存ID -->
+    <van-button bind:click="pay" data-id="{{goods.id}}" data-title="{{goods.title}}"data-price="{{goods.price}}"data-pic="{{goods.pic}}" class="b1" type="primary" size="small" color="#01B8B9" square="true" custom-style="width: 200rpx">提交订单</van-button>
   </view>
 </view>

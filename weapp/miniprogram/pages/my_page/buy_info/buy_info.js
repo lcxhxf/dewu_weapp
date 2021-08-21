@@ -7,6 +7,9 @@ Page({
    * 页面的初始数据
    */
   data: {
+    goods: [],
+    total: 0,
+    CheckAll: false
   },
 
   /**
@@ -16,78 +19,85 @@ Page({
     wx.setNavigationBarTitle({
       title: '我的购买'
     })
-    // const {data} = await dewuCollection
-    // .field({
-    //   _id:true,
-    //   pic:true,
-    //   title:true,
-    //   price:true
-    // })  
-    // .get()
-    // console.log(data);
-    // this.setData({
-    //   produces: data
-    // })
-
   },
 
-  /**
-   * 生命周期函数--监听页面初次渲染完成
-   */
-  onReady: function () {
-
-  },
-
-  /**
-   * 生命周期函数--监听页面显示
-   */
-  // 每次打开这个页面都会更新
-  onShow: function () {
-    wx.getStorage({
-      key: 'information',
-      success: res => {
-        console.log(res.data)
-        this.setData({
-          pay: res.data
-        })
-        console.log(this.data);
-      }
+  onShow() {
+    let goods = wx.getStorageSync("goods")
+    this.setData({
+      cartList: false,
+      goods: goods
     })
-    console.log(this.data);
+    console.log(goods);
   },
 
-  /**
-   * 生命周期函数--监听页面隐藏
-   */
-  onHide: function () {
+  // 选择所有商品
+  select(e) {
+    let CheckAll = this.data.CheckAll;
+    CheckAll = !CheckAll
+    let goods = this.data.goods
 
+    for (let i = 0; i < goods.length; i++) {
+      goods[i].selected = CheckAll
+    }
+
+    this.setData({
+      goods: goods,
+      CheckAll: CheckAll
+    })
+    this.getTotal()
   },
 
-  /**
-   * 生命周期函数--监听页面卸载
-   */
-  onUnload: function () {
+  // 选择商品
+  selectedCart(e) {
+    var goods = this.data.goods //获取购物车列表
+    var index = e.currentTarget.dataset.index; //获取当前点击事件的下标索引
+    var selected = goods[index].selected; //获取购物车里面的value值
 
+    //取反
+    goods[index].selected = !selected;
+    this.setData({
+      goods: goods
+    })
+    this.getTotal();
+    wx.setStorageSync("goods", goods)
   },
 
-  /**
-   * 页面相关事件处理函数--监听用户下拉动作
-   */
-  onPullDownRefresh: function () {
-
+  //删除
+  delete(e) {
+    let goods = this.data.goods //获取购物车列表
+    let index = e.currentTarget.dataset.index //获取当前点击事件的下标索引
+    goods.splice(index, 1)
+    this.setData({
+      goods: goods
+    });
+    if (goods.length) {
+      this.setData({
+        cartList: false
+      });
+    }
+    this.getTotal()
+    wx.setStorageSync("goods", goods)
   },
 
-  /**
-   * 页面上拉触底事件的处理函数
-   */
-  onReachBottom: function () {
-
+  // 全部结算
+  cleanAll(e) {
+    this.setData({
+      goods: []
+    })
+    wx.setStorageSync("goods", [])
   },
 
-  /**
-   * 用户点击右上角分享
-   */
-  onShareAppMessage: function () {
-
-  }
+  //合计
+  getTotal() {
+    let sum = 0
+    for (let i = 0; i < this.data.goods.length; i++) {
+      if (this.data.goods[i].selected) {
+        sum += this.data.goods[i].value * this.data.goods[i].price
+      }
+    }
+    //更新数据
+    this.setData({
+      total: sum
+    })
+  },
 })
