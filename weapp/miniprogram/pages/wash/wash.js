@@ -83,16 +83,16 @@ Page({
   //     url: '/pages/buy/buy',
   //   })
   // },
-  return() {
+  return(e) {
     // wx.navigateTo({
     //   url: '/miniprogram/pages/buy/buy.wxml',
     // })
     wx.switchTab({
-      url: '/pages/buy_page/page/buy/buy',
+      url: '/pages/buy_page/page/buy/buy'
     })
     
   },
-  more() {
+  more(e) {
     if(!this.data.moreData){
       this.setData({
         moreData:true

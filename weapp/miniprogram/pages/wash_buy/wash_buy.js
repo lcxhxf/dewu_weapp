@@ -1,4 +1,5 @@
 // miniprogram/pages/wash_buy/wash_buy.js
+import Toast from '@vant/weapp/toast/toast';
 Page({
 
   /**
@@ -11,6 +12,9 @@ Page({
     wx.navigateBack({
       delta: 1
     })
+  },
+  success(e) {
+    Toast.success('购买成功');
   },
   /**
    * 生命周期函数--监听页面加载

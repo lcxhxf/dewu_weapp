@@ -219,13 +219,47 @@
   display:flex;
   color: #14a1fd;
   font-size: 10px;
+  position: relative;
 }
 .wash-5-1-2-top-left-text2-1 {
-  padding-left: 4.66666vw;
+  padding-left: 6.66666vw;
 }
 .wash-5-1-2-top-left-text2-2 {
   line-height: 18px;
+  margin-top: -2px;
 }
-.wash-5-1-2-top-left-text2-3 {
+.xian {
+  position: absolute;
+  border: 0.5px solid #14a1fd;
+  width: 40px;
+  height: 0px;
+  margin-top: 6px;
+  margin-left: 25px;
+}
 
+.wb4-4-1-1 {
+  margin-top: 10px;
+  text-align: center;
+  font-size: 13px;
+}
+.wb4-4-1-2 {
+  display:flex;
+  color: #000000;
+  font-size: 10px;
+  margin-top: 4px;
+  position: relative;
+}
+.wb4-1-1-2-1 {
+  margin-left: 13px;
+}
+.wb4-1-1-2-4 {
+  margin-left: 1px;
+}
+.wb4-1-1-2-7 {
+  position: absolute;
+  border: 0.5px solid #000000;
+  width: 38px;
+  height: 0px;
+  margin-top: 6px;
+  margin-left: 55px;
 }

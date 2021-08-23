@@ -12,8 +12,8 @@
   </view>
   <view class="wb1-2">
     <view class="wb1-2-1">江西省南昌市青山湖区玉屏西大街665号</view>
-    <view class="wb1-2-2">江西财经大学宁庐A栋508</view>
-    <view class="wb1-2-3">罗超 178****3357</view>
+    <view class="wb1-2-2">江西财经大学</view>
+    <view class="wb1-2-3">金木 178****3357</view>
   </view>
   <view class="wb1-3">
     <image src="https://cdn.poizon.com/node-common/Y2xlYXJfaWNvbl9tb3JlQDN4MTU5Mzc1NjkxMDkzMA==.png"></image>
@@ -41,17 +41,41 @@
       <view class="wash-4-1-2-top-left-text2">
             <view class="wash-4-1-2-top-left-text2-1">￥</view>
             <view class="wash-4-1-2-top-left-text2-2">39</view>
-            <view class="wash-4-1-2-top-left-text2-3">/件</view>
+            <view class="wash-4-1-2-top-left-text2-3">/双</view>
       </view>
       <view class="wash-5-1-2-top-left-text2">
             <view class="wash-5-1-2-top-left-text2-1">￥</view>
-            <view class="wash-5-1-2-top-left-text2-2">39</view>
-            <view class="wash-5-1-2-top-left-text2-3">/件</view>
+            <view class="wash-5-1-2-top-left-text2-2">59</view>
+            <view class="wash-5-1-2-top-left-text2-3">/双</view>
+            <view class="xian"></view>
       </view>
     </view>
-    
-    <view class="wb4-1-2"></view>
-    <view class="wb4-1-3"></view>
+    <view class="wb4-1-2">
+      <view class="wash-4-1-2-top-left-text2">
+            <view class="wash-4-1-2-top-left-text2-1">￥</view>
+            <view class="wash-4-1-2-top-left-text2-2">78</view>
+            <view class="wash-4-1-2-top-left-text2-3">/双</view>
+      </view>
+      <view class="wash-5-1-2-top-left-text2">
+            <view class="wash-5-1-2-top-left-text2-1">￥</view>
+            <view class="wash-5-1-2-top-left-text2-2">118</view>
+            <view class="wash-5-1-2-top-left-text2-3">/2双</view>
+            <view class="xian"></view>
+      </view>
+    </view>
+    <view class="wb4-1-3">
+      <view class="wash-4-1-2-top-left-text2">
+            <view class="wash-4-1-2-top-left-text2-1">￥</view>
+            <view class="wash-4-1-2-top-left-text2-2">117</view>
+            <view class="wash-4-1-2-top-left-text2-3">/双</view>
+      </view>
+      <view class="wash-5-1-2-top-left-text2">
+            <view class="wash-5-1-2-top-left-text2-1">￥</view>
+            <view class="wash-5-1-2-top-left-text2-2">177</view>
+            <view class="wash-5-1-2-top-left-text2-3">/3双</view>
+            <view class="xian"></view>
+      </view>
+    </view>
   </view>
   <view class="wb4-3">
     <view class="wb4-3-1">养护修护</view>
@@ -61,17 +85,94 @@
     </view>
   </view>
   <view class="wb4-4">
-    <view class="wb4-4-1"></view>
-    <view class="wb4-4-2"></view>
-    <view class="wb4-4-3"></view>
+    <view class="wb4-4-1">
+      <view class="wb4-4-1-1">光面皮补伤</view>
+      <view class="wb4-4-1-2">
+        <view class="wb4-1-1-2-1">￥</view>
+        <view class="wb4-1-1-2-2">199</view>
+        <view class="wb4-1-1-2-3">/双</view>
+        <view class="wb4-1-1-2-4">￥</view>
+        <view class="wb4-1-1-2-5">369</view>
+        <view class="wb4-1-1-2-6">/双</view>
+        <view class="wb4-1-1-2-7"></view>
+      </view>
+    </view>
+    <view class="wb4-4-2">
+      <view class="wb4-4-1-1">绒面鞋补色</view>
+      <view class="wb4-4-1-2">
+        <view class="wb4-1-1-2-1">￥</view>
+        <view class="wb4-1-1-2-2">199</view>
+        <view class="wb4-1-1-2-3">/双</view>
+        <view class="wb4-1-1-2-4">￥</view>
+        <view class="wb4-1-1-2-5">369</view>
+        <view class="wb4-1-1-2-6">/双</view>
+        <view class="wb4-1-1-2-7"></view>
+      </view>
+    </view>
+    <view class="wb4-4-3">
+      <view class="wb4-4-1-1">橡胶底去氧化</view>
+      <view class="wb4-4-1-2">
+        <view class="wb4-1-1-2-1">￥</view>
+        <view class="wb4-1-1-2-2">199</view>
+        <view class="wb4-1-1-2-3">/双</view>
+        <view class="wb4-1-1-2-4">￥</view>
+        <view class="wb4-1-1-2-5">369</view>
+        <view class="wb4-1-1-2-6">/双</view>
+        <view class="wb4-1-1-2-7"></view>
+      </view>
+    </view>
   </view>
   <view class="wb4-4">
-    <view class="wb4-4-1"></view>
-    <view class="wb4-4-2"></view>
-    <view class="wb4-4-3"></view>
+    <view class="wb4-4-1">
+      <view class="wb4-4-1-1">水晶底底去氧化</view>
+      <view class="wb4-4-1-2">
+        <view class="wb4-1-1-2-1">￥</view>
+        <view class="wb4-1-1-2-2">199</view>
+        <view class="wb4-1-1-2-3">/双</view>
+        <view class="wb4-1-1-2-4">￥</view>
+        <view class="wb4-1-1-2-5">369</view>
+        <view class="wb4-1-1-2-6">/双</view>
+        <view class="wb4-1-1-2-7"></view>
+      </view>
+    </view>
+    <view class="wb4-4-2">
+      <view class="wb4-4-1-1">粘胶修补</view>
+      <view class="wb4-4-1-2">
+        <view class="wb4-1-1-2-1">￥</view>
+        <view class="wb4-1-1-2-2">199</view>
+        <view class="wb4-1-1-2-3">/双</view>
+        <view class="wb4-1-1-2-4">￥</view>
+        <view class="wb4-1-1-2-5">369</view>
+        <view class="wb4-1-1-2-6">/双</view>
+        <view class="wb4-1-1-2-7"></view>
+      </view>
+    </view>
+    <view class="wb4-4-3">
+      <view class="wb4-4-1-1">防水防污</view>
+      <view class="wb4-4-1-2">
+        <view class="wb4-1-1-2-1">￥</view>
+        <view class="wb4-1-1-2-2">199</view>
+        <view class="wb4-1-1-2-3">/双</view>
+        <view class="wb4-1-1-2-4">￥</view>
+        <view class="wb4-1-1-2-5">369</view>
+        <view class="wb4-1-1-2-6">/双</view>
+        <view class="wb4-1-1-2-7"></view>
+      </view>
+    </view>
   </view>
   <view class="wb4-5">
-    <view class="wb4-5-1"></view>
+    <view class="wb4-5-1">
+      <view class="wb4-4-1-1">塑封包膜</view>
+      <view class="wb4-4-1-2">
+        <view class="wb4-1-1-2-1">￥</view>
+        <view class="wb4-1-1-2-2">199</view>
+        <view class="wb4-1-1-2-3">/双</view>
+        <view class="wb4-1-1-2-4">￥</view>
+        <view class="wb4-1-1-2-5">369</view>
+        <view class="wb4-1-1-2-6">/双</view>
+        <view class="wb4-1-1-2-7"></view>
+      </view>
+    </view>
   </view>
 </view>
 <view class="wb5">
@@ -93,20 +194,18 @@
     <view class="wb7-5">4.请寄送整双鞋子。</view>
   </view>
 </view>
-<view class='add_btn'>
+<view class='add_btn' >
   <view class="add_btn1">
     <view class="add_btn1-1">
       <view>实付款：￥63.00</view>
       <view>已优惠：￥12</view>
     </view>
     <view class="add_btn1-2">
-      <button class='btn' style="width: 200rpx;">
+      <button class='btn' style="width: 200rpx;" bindtap="success"> 
         购买
     </button>
+    <van-toast id="van-toast" />
     </view>
 </view>
-   
 </view>
-<view></view>
-
 
