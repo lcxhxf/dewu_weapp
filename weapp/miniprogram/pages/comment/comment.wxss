@@ -1,0 +1,89 @@
+.tips {
+  width: 100%;
+  height: 160rpx;
+  display: flex;
+}
+.tip {
+  height: 100%;
+  width: 120rpx;
+  position: relative;
+}
+.tip-img {
+  position: absolute;
+  margin: 25rpx 35rpx 15rpx 35rpx;
+}
+.tip-text {
+  position: absolute;
+  width: 100%;
+  top: 85rpx;
+  text-align: center;
+}
+.icons {
+  width: 300rpx;
+  height: 100%;
+  display: flex;
+}
+.icon {
+  width: 100rpx;
+  height: 100%;
+  position: relative;
+}
+.icon-share {
+  position: absolute;
+  width: 40rpx;
+  height: 40rpx;
+  margin: 20rpx 30rpx 10rpx 30rpx;
+}
+.icon-text {
+  width: 100rpx;
+  position: absolute;
+  top: 60rpx;
+  text-align: center;
+}
+.inputs {
+  margin-left: 50rpx;
+  height: 60rpx;
+  width: 400rpx;
+  position: relative;
+}
+.input {
+  height: 60rpx;
+  background-color: rgb(231, 230, 230);
+  border-radius: 30rpx;
+  width: 350rpx;
+  padding: 0 0 0 50rpx;
+}
+.inputs-icon {
+  position: absolute;
+  width: 30rpx;
+  height: 30rpx;
+  left: 15rpx;
+  top: 16rpx;
+}
+.comments {
+  position: relative;
+  height:100vh;
+  width:100%;
+}
+.total {
+   height: 100rpx;
+  width: 100%;
+  top: 0;
+  line-height: 100rpx;
+  font-size: 32rpx;
+  text-align: center;
+}
+.cu-item_like {
+  position: absolute;
+  right: 30rpx;
+  top: 40rpx;
+}
+.all {
+  width: 100%;
+  height: 50rpx;
+  font-size: 30rpx;
+  text-align: center;
+  line-height: 50rpx;
+  background-color: #fff;
+  color: #00cbcc;
+}

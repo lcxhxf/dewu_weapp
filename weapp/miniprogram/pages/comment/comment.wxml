@@ -1,0 +1,136 @@
+<view class="page">
+  <scroll-view scroll-y="true">
+    <view class="hd">
+      <view class="img" style="width:750rpx;height:1222rpx;">
+        <image src="../../images/comment/0.jpg" style="width:750rpx;height:1222rpx;"></image>
+      </view>
+    </view>
+    <!-- 评论区 -->
+    <view class="bd">
+      <!-- 显示评论列表 -->
+      <view class="cu-list menu-avatar comment solids-top">
+        <block wx:for="{{comment_list}}" wx:for-item="clist" wx:key="clist.comment_id">
+          <view class="cu-item" wx:if="{{clist.reply_id == 0}}">
+            <view class="cu-avatar round" style="background-image:url({{clist.comment_user_avatar}});"></view>
+            <view class="content">
+              <view class="text-grey" data-name="{{clist.comment_user_name}}" data-id="{{clist.comment_id}}"
+                bindtap="replyComment">{{clist.comment_user_name}} · {{clist.comment_time}}</view>
+              <view class="text-gray text-content text-df" data-name="{{clist.comment_user_name}}"
+                data-id="{{clist.comment_id}}" bindtap="replyComment">
+                {{clist.comment_text}}
+              </view>
+            </view>
+            <image wx:if="{{clist.like==false}}" data-id="{{clist._id}}" data-like="{{clist.like}}" bindtap="clicklike"
+              class="cu-item_like" src="../../images/comment/onlike.png" style="height:49rpx;width:36rpx;"></image>
+            <image wx:if="{{clist.like==true}}" data-id="{{clist._id}}" data-like="{{clist.like}}" bindtap="clicklike"
+              class="cu-item_like" src="../../images/comment/likeon.png" style="height:49rpx;width:36rpx;"></image>
+          </view>
+        </block>
+      </view>
+      <view class="all" bindtap="showPopup">全部{{total}}条评论 ></view>
+    </view>
+
+
+    <van-popup show="{{ show }}" position="bottom" custom-style="height: 70%" closeable close-icon-position="top-left"
+      bind:close="onClose">
+      <view class="total">{{total}}条评论</view>
+      <scroll-view class="comments" scroll-y="true">
+        <view class="cu-list menu-avatar comment solids-top">
+          <block wx:for="{{comment_list}}" wx:for-item="clist" wx:key="clist.comment_id">
+            <view class="cu-item" wx:if="{{clist.reply_id == 0}}">
+              <view class="cu-avatar round" style="background-image:url({{clist.comment_user_avatar}});"></view>
+              <view class="content">
+                <view class="text-grey" data-id="{{clist.comment_id}}" data-name="{{clist.comment_user_name}}"
+                  data-pid="{{clist.comment_id}}" bindtap="replyComment">{{clist.comment_user_name}} ·
+                  {{clist.comment_time}}</view>
+                <view class="text-gray text-content text-df" data-name="{{clist.comment_user_name}}"
+                  data-id="{{clist.comment_id}}" data-pid="{{clist.comment_id}}" bindtap="replyComment">
+                  {{clist.comment_text}}
+                </view>
+                <!--  回复列表 -->
+                <view class="cu-list menu-avatar comment solids-top">
+                  <block wx:for="{{reply_list}}" wx:for-item="rlist" wx:key="rlist.comment_id">
+                    <view class="cu-item" wx:if="{{rlist.parent_id==clist.comment_id}}">
+                      <view class="cu-avatar round" style="background-image:url({{rlist.comment_user_avatar}});"></view>
+                      <view class="content" data-name="{{rlist.comment_user_name}}" data-id="{{rlist.comment_id}}"
+                        data-pid="{{rlist.parent_id}}" bindtap="replyComment">
+                        <view class="text-grey">{{rlist.comment_user_name}} · {{rlist.comment_time}}</view>
+                        <view class="text-gray text-content text-df" wx:if="{{rlist.reply_name.length>0}}">
+                          回复 {{rlist.reply_name}} {{rlist.comment_text}}
+                        </view>
+                        <block wx:else>
+                          <view class="text-gray text-content text-df">
+                            {{rlist.comment_text}}
+                          </view>
+                        </block>
+                      </view>
+                      <image wx:if="{{rlist.like==false}}" data-pid="{{rlist.parent_id}}" data-id="{{rlist._id}}" data-like="{{rlist.like}}"
+                        bindtap="clicklike" class="cu-item_like" src="../../images/comment/onlike.png"
+                        style="height:49rpx;width:36rpx;"></image>
+                      <image wx:if="{{rlist.like==true}}" data-pid="{{rlist.parent_id}}" data-id="{{rlist._id}}" data-like="{{rlist.like}}"
+                        bindtap="clicklike" class="cu-item_like" src="../../images/comment/likeon.png"
+                        style="height:49rpx;width:36rpx;"></image>
+                    </view>
+                  </block>
+                </view>
+                
+              </view>
+              <image wx:if="{{clist.like==false}}" data-id="{{clist._id}}" data-like="{{clist.like}}"
+                bindtap="clicklike" class="cu-item_like" src="../../images/comment/onlike.png"
+                style="height:49rpx;width:36rpx;"></image>
+              <image wx:if="{{clist.like==true}}" data-id="{{clist._id}}" data-like="{{clist.like}}" bindtap="clicklike"
+                class="cu-item_like" src="../../images/comment/likeon.png" style="height:49rpx;width:36rpx;"></image>
+            </view>
+          </block>
+        </view>
+        <van-goods-action>
+          <view class="inputs">
+            <image class="inputs-icon" src="https://img0.baidu.com/it/u=338945981,3379590646&fm=26&fmt=auto&gp=0.jpg">
+            </image>
+            <input class="input" value="{{value}}" bindconfirm="sendComment" cursor-spacing="100" type="text" confirm-type="send"
+              placeholder="{{placeHolder}}">
+            </input>
+          </view>
+          <view class="icons">
+            <view class="icon">
+              <image class="icon-share" src="../../images/comment/share.png"></image>
+              <text class="icon-text">47</text>
+            </view>
+            <view class="icon">
+              <image class="icon-share" src="../../images/comment/comment.png"></image>
+              <text class="icon-text">2496</text>
+            </view>
+            <view class="icon">
+              <image class="icon-share" src="../../images/comment/like.png"></image>
+              <text class="icon-text">3239</text>
+            </view>
+          </view>
+        </van-goods-action>
+      </scroll-view>
+    </van-popup>
+
+    <view style="height:250rpx;"></view>
+    <van-goods-action>
+      <view class="inputs">
+        <image class="inputs-icon" src="https://img0.baidu.com/it/u=338945981,3379590646&fm=26&fmt=auto&gp=0.jpg">
+        </image>
+        <input class="input" bindconfirm="sendComment" cursor-spacing="100" type="text" confirm-type="send" placeholder="{{placeHolder}}">
+        </input>
+      </view>
+      <view class="icons">
+        <view class="icon">
+          <image class="icon-share" src="../../images/comment/share.png"></image>
+          <text class="icon-text">47</text>
+        </view>
+        <view class="icon" bindtap="showPopup">
+          <image class="icon-share" src="../../images/comment/comment.png"></image>
+          <text class="icon-text">2496</text>
+        </view>
+        <view class="icon">
+          <image class="icon-share" src="../../images/comment/like.png"></image>
+          <text class="icon-text">3239</text>
+        </view>
+      </view>
+    </van-goods-action>
+  </scroll-view>
+</view>
